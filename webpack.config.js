@@ -1,31 +1,34 @@
+const webpack = require('webpack');
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const config = {
+	entry: `${path.resolve(__dirname, 'src')}/index.jsx`,
 	resolve: {
 		extensions: ['.js', '.jsx', '.json', '.css', '.scss'],
 	},
-	entry: {
-		app: './src/index.jsx',
-	},
 	devServer: {
 		contentBase: './dist',
+		hot: true,
 	},
-	module: {
-		loaders: [{
-			test: /\.jsx?/,
-			include: path.resolve(__dirname, 'src'),
-			loader: 'babel-loader',
-		}],
+	output: {
+		path: path.resolve(__dirname, 'dist'),
+		filename: 'bundle.js',
 	},
 	plugins: [
 		new CopyWebpackPlugin([
 			{ from: './src/index.html' },
 		]),
+		new webpack.HotModuleReplacementPlugin(),
 	],
-	output: {
-		filename: 'bundle.js',
-		path: path.resolve(__dirname, 'dist'),
+	module: {
+		loaders: [
+			{
+				test: /\.jsx?/,
+				include: `${path.resolve(__dirname, 'src')}`,
+				loader: 'babel-loader',
+			},
+		],
 	},
 };
 

@@ -2,6 +2,6 @@
 
 exports[`renders correctly 1`] = `
 <p>
-  nathanmweller welocomes you!
+  Hello React and with hot-reloading!
 </p>
 `;
