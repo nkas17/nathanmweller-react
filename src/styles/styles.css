@@ -1,0 +1,439 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  box-sizing: border-box;
+  font: 18px helvetica, arial, sans-serif;
+  line-height: 2rem;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/**** end of reset ****/
+
+/**** webfonts ****/
+@font-face {
+  font-family: "Cronus Round";
+  src: url("../fonts/Cronus Round.otf") format("opentype");
+}
+@font-face {
+  font-family: "Boogaloo-Regular";
+  src: url("../fonts/Boogaloo-Regular.ttf") format("truetype");
+}
+/**** end webfonts ****/
+
+/**** global styles ****/
+.body {
+  color: #282727;
+  background: url("../imgs/mtn-min.jpg") black;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  /* opacity: 0.75; */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.header_size_large{
+  font-size: 1.5rem;
+}
+
+.header_size_medium{
+  font-size: 1.2rem;
+}
+
+.header_size_extra_small{
+  font-size: .8rem;
+}
+
+.emphasis {
+  color: #d57f0c;
+  font-size: 1.2em;
+}
+
+.page-wrapper{
+  background: rgba(249, 250, 250, 0.37);
+  height: 100%;
+  widows: 100%;
+  overflow: auto;
+}
+
+.flex-wrapper {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+} 
+
+.flex-item {
+  flex: 1 1 auto;
+}
+
+.page-header{
+	text-align: center;
+	margin: 0 2%;
+}
+
+.page-header__flex-item {
+  flex: 1 1 20%;
+}
+
+.page-header__title {
+  font: 2.5rem Boogaloo-Regular, "Cronus Round",herculanum, helvetica, arial, sans-serif;
+  font-weight: bold;
+  /* background: rgba(127, 171, 240, 0.5); */
+}
+
+.page-header__description {
+  font: 1.2rem "Comic Sans MS", "Cronus Round", Boogaloo-Regular, sans-serif;
+}
+
+.page-header__contact-info{
+  margin: 1.5% 0;
+}
+
+.contact-info__item{
+  display: inline;
+  padding: 5px;
+  color: #5C6D77;
+}
+
+.dilbert{
+	background: url(../imgs/dilbert.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 50%;
+	padding-left: 10px;
+	position: relative;
+	margin-bottom: 50px;
+	opacity: 0;
+	-webkit-transition: opacity 200ms ease-in-out;
+	-moz-transition: opacity 200ms ease-in-out;
+	transition: opacity 500ms ease-in-out;
+}
+.dilbert:hover{
+	opacity: 100;
+}
+
+.personal-info,
+.logo,
+.nav{
+  margin: 1.5%;
+}
+
+.nav__item{
+  display: inline;
+  padding: 5px;
+}
+
+.main__flex-item{
+  color: black;
+  margin: 0 2% 2% 2%;
+}
+
+.main__header{
+	font-family: Boogaloo-Regular, "Cronus Round",herculanum, helvetica, arial, sans-serif;
+  background: rgba(236, 236, 236, 1);
+  border-bottom: 2px solid #3ba5d6;
+  padding: 10px;
+	flex-direction: row;
+}
+.text_size_small{
+	font-size: .8rem;
+}
+.font_weight_bold{
+  font-weight: bold;
+}
+
+.article__header{
+	/* font-family: helvetica, arial, sans-serif; */
+}
+
+.article__paragraph{
+  padding: 1% 3%;
+}
+
+.article__blockquote {
+  margin: 2% 4%;
+  padding: 1%;
+  border-top: 2px dashed #3ba5d6;
+  border-bottom: 2px dashed #3ba5d6;
+  background: rgba(33, 104, 169, 0.05);
+  font-family: "Comic Sans MS", sans-serif;
+  ;
+}
+
+.article__content{
+  margin: 1.5%;
+}
+
+.article__aside{
+  margin: 1.5% 1.5% 1.5% 0;
+}
+
+.article:last-child {
+  margin-bottom: 2%;
+}
+
+.definition-list__term{
+	font-weight: bold;
+}
+
+.definition-list__definition{
+	font-style: italic;
+  padding: 0 10px;
+}
+
+.logo{
+	display: block;	
+  margin-top: 0;
+}
+
+.logo__description{
+  margin: 8% 5%;
+  font: "Comic Sans MS", Boogaloo-Regular, sans-serif;
+}
+
+.logo__image {
+  border: 4px solid #282727;
+  border-radius: 50%;
+  float: right;
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+
+.nav {
+  /* border: 2px solid blue; */
+  font: 1.2rem Boogaloo-Regular, herculanum, helvetica, arial, sans-serif;;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nav__link:link, 
+.nav__link:visited, 
+.nav__link:focus{
+  text-decoration: none;
+}
+
+.link:link, 
+.link:visited, 
+.link:focus{
+  color: black;
+  cursor: pointer;
+}
+
+.link_selected:link, 
+.link_selected:visited, 
+.link_selected:focus{
+  font-size: 1.8rem;
+}
+
+.div-link {
+  text-decoration: none;
+}
+
+.aside__flex-item{
+	margin-left: 0;
+}
+
+.promo{
+  display: none;
+}
+
+.hr {
+	height: 2px;
+	color: #3ba5d6;
+	background-color: #3ba5d6;
+	border: none;
+}
+
+.summary{
+  font-size: 1rem;
+  outline: none;
+}
+
+.details{
+  margin: 1.5%;
+}
+
+.details__paragraph{
+  text-indent: 2rem;  
+}
+
+.pre {
+  display: block;
+  margin: 1.5% 6%;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #E0DFDF;
+	background-color: rgba(36, 36, 36, 0.93);
+	overflow-x: scroll;
+}
+
+.list{
+  margin: 0 0 0 5%;
+  padding: 1% 3%;
+}
+
+.list-style-square{
+	list-style: square;
+}
+
+.list-style-circle{
+  list-style: circle;
+}
+
+.w3c-banner,
+.mdn-banner {
+	display: none;	
+
+}
+
+.main__header+article.flex-wrapper,
+.main__header+div.flex-wrapper{
+  background: rgba(249, 250, 250, 0.75);
+}
+
+
+@media (hover: hover) {
+	.summary:hover{
+		cursor: pointer;
+	}
+
+  .logo__image:hover{
+    transition: all 500ms ease-in;
+    transform: scale(1.5);
+	}
+	
+  .link:hover{
+		color: #5C6D77;
+    transition: all 200ms ease-in;
+  }
+}
+
+@media only screen and (min-width: 768px){
+
+	.w3c-banner,
+	.mdn-banner {
+		display: block;
+		margin:	auto;
+  }
+  
+  .page-header{
+    text-align: left;
+  }
+
+  .page-header__flex-item {
+    flex: 1 1 44%;
+  }
+
+  .page-header__title {
+    font: 3.5rem Boogaloo-Regular, "Cronus Round",herculanum, helvetica, arial, sans-serif;
+    font-weight: bold;
+	}
+	
+	.article__header{
+		position: sticky;
+		top: 0;
+	}
+  
+  .header_size_large{
+    font-size: 2rem;
+  }
+
+  .header_size_medium{
+    font-size: 1.4rem;
+  }
+
+  .flex-wrapper {
+    flex-direction: row;
+	}
+	
+	.aside{
+		position: sticky;
+		top: 0;
+		height: 50%;
+	}
+
+  .logo {
+    margin-top: 1%;
+    flex: 1 1;
+		display: block;	
+  }
+  
+	.promo{
+		display: block;
+		background-color: whitesmoke;
+		padding: 10px;
+  }
+}
+
+
+.burger-menu {
+  display: none;
+}
+
+.burger-menu:checked ~ .menu {
+	display: block;
+	position: fixed;
+	top: 326px;
+	right: 28px;
+	background-color: rgb(141, 194, 218);
+	border: 2px solid #5C6D77;
+	box-shadow: #5C6D77 2px 2px 2px;
+}
+
+.hamburger {
+  display:block;
+  
+}
+
+.menu {
+   display:none;
+}
