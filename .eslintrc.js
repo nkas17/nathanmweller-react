@@ -15,6 +15,10 @@ module.exports = {
 			"error",
 			"tab"
 		],
+		"react/jsx-indent-props": [
+			"error",
+			"tab"
+		],
 		"no-tabs": "off"
 	}
 };
