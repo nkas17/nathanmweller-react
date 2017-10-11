@@ -151,7 +151,7 @@ exports[`renders correctly 1`] = `
             <img
               alt="mdn"
               className="mdn-banner"
-              src="./imgs/MDN_promoBanner_120x240px_v2.png"
+              src="test-file-stub"
             />
           </a>
           <hr
@@ -164,7 +164,7 @@ exports[`renders correctly 1`] = `
             <img
               alt="w3c"
               className="w3c-banner"
-              src="./imgs/w3c.png"
+              src="test-file-stub"
             />
           </a>
         </div>
@@ -179,7 +179,7 @@ exports[`renders correctly 1`] = `
             alt="nathan m weller"
             className="logo__image"
             height="200"
-            src="./imgs/nathanmweller.jpg"
+            src="test-file-stub"
             width="200"
           />
           <p
