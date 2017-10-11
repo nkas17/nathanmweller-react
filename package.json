@@ -8,8 +8,9 @@
 	"license": "MIT",
 	"scripts": {
 		"start": "./node_modules/.bin/webpack-dev-server",
-		"build": "webpack -p",
-		"build:test": "webpack -d",
+		"build": "yarn run clean && webpack -p",
+		"build:test": "yarn run lean && webpack -d",
+    "clean": "node node_modules/rimraf/bin.js dist/*",
 		"eslint": "./node_modules/.bin/eslint --ext .jsx --ext .js src webpack.config.*",
 		"eslint:report": "./node_modules/.bin/eslint --ext .jsx --ext .js src --output-file ./report/eslint-report.html --format html",
 		"test": "jest"
@@ -29,6 +30,7 @@
 		"file-loader": "^1.1.5",
 		"jest": "^21.2.1",
 		"react-test-renderer": "^16.0.0",
+		"rimraf": "^2.6.2",
 		"style-loader": "^0.19.0",
 		"url-loader": "^0.6.2",
 		"webpack": "^3.6.0",
@@ -38,13 +40,13 @@
 		"prop-types": "^15.6.0",
 		"react": "^16.0.0",
 		"react-dom": "^16.0.0",
-    "react-hot-loader": "^3.0.0-beta.6",
+		"react-hot-loader": "^3.0.0-beta.6",
 		"react-router-dom": "^4.2.2"
 	},
 	"jest": {
-    "modulePaths": [
-      "/styles"
-    ],
+		"modulePaths": [
+			"/styles"
+		],
 		"moduleNameMapper": {
 			"\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
 			"\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
