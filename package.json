@@ -11,9 +11,10 @@
 		"build": "yarn run clean && webpack -p",
 		"build:test": "yarn run lean && webpack -d",
     "clean": "node node_modules/rimraf/bin.js dist/*",
-		"eslint": "./node_modules/.bin/eslint --ext .jsx --ext .js src webpack.config.*",
-		"eslint:report": "./node_modules/.bin/eslint --ext .jsx --ext .js src --output-file ./report/eslint-report.html --format html",
-		"test": "jest"
+		"lint": "./node_modules/.bin/eslint --ext .jsx --ext .js src webpack.config.*",
+		"lint:report": "./node_modules/.bin/eslint --ext .jsx --ext .js src --output-file ./report/eslint-report.html --format html",
+		"test": "jest",
+		"pre-push": "yarn run lint && yarn run test"
 	},
 	"devDependencies": {
 		"babel-core": "^6.26.0",
