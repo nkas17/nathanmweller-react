@@ -1,7 +1,6 @@
 import React from 'react';
+import SideBar from '../components/SideBar';
 import nathanmweller from '../imgs/nathanmweller.jpg';
-import mdn from '../imgs/MDN_promoBanner_120x240px_v2.png';
-import w3c from '../imgs/w3c.png';
 import '../styles/fed.css';
 
 const FedPage = () => (
@@ -71,17 +70,7 @@ const FedPage = () => (
 						</div>
 					</a>
 				</div>
-				<aside className="aside article__aside">
-					<div className="promo flex-item aside__flex-item">
-						<a className="link mdn-promo" href="https://developer.mozilla.org/en-US/">
-							<img className="mdn-banner" src={mdn} alt="mdn" />
-						</a>
-						<hr className="hr" />
-						<a className="link w3c-promo" href="https://www.w3.org/">
-							<img className="w3c-banner" src={w3c} alt="w3c" />
-						</a>
-					</div>
-				</aside>
+				<SideBar/>
 				<footer className="footer flex-item">
 					<div className="logo footer__logo">
 						<img

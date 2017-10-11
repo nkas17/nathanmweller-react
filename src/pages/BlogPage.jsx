@@ -1,4 +1,9 @@
 import React from 'react';
+import SideBar from '../components/SideBar';
+import BlogHistory from '../components/BlogHistory';
+import mdn from '../imgs/MDN_promoBanner_120x240px_v2.png';
+import w3c from '../imgs/w3c.png';
+import '../styles/blog.css';
 
 const BlogPage = () => (
 	<main className="main flex-wrapper">
@@ -12,6 +17,9 @@ const BlogPage = () => (
 						a blog
 					</div>
 				</div>
+				<SideBar>
+					<BlogHistory />
+				</SideBar>
 			</article>
 		</div>
 	</main>
