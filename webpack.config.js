@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = {
 	entry: {
@@ -26,6 +27,9 @@ const config = {
 		new CopyWebpackPlugin([
 			{ from: './src/index.html' },
 		]),
+
+		new ExtractTextPlugin('styles.css'),
+
 		new webpack.HotModuleReplacementPlugin(),
 
 		// prints more readable module names in the browser console on HMR updates
@@ -40,10 +44,10 @@ const config = {
 			},
 			{
 				test: /\.css$/,
-				use: [
-					'style-loader',
-					'css-loader',
-				],
+				use: ExtractTextPlugin.extract({
+					fallback: 'style-loader',
+					use: ['css-loader'],
+				}),
 			},
 			{
 				test: /\.(jpe?g|png|gif|ico)$/i,
