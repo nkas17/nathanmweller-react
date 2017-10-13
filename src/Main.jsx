@@ -4,7 +4,6 @@ import HomePage from './pages/HomePage';
 import FedPage from './pages/FedPage';
 import BlogPage from './pages/BlogPage';
 import AboutPage from './pages/AboutPage';
-import Header from './components/Header';
 
 
 /**
@@ -15,7 +14,6 @@ class Main extends React.Component { // eslint-disable-line react/prefer-statele
 		return (
 			<BrowserRouter>
 				<main>
-					<Header />
 					<Switch>
 						<Route exact path="/" component={HomePage} />
 						<Route exact path="/fed" component={FedPage} />
