@@ -2,7 +2,6 @@ import React from 'react';
 import Header from '../components/Header';
 import SideBar from '../components/SideBar';
 import Footer from '../components/Footer';
-import nathanmweller from '../imgs/nathanmweller.jpg';
 
 const FedPage = () => (
 	[

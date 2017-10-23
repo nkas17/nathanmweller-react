@@ -19,7 +19,7 @@ const Header = ({ alwaysShow }) => (
 				className="logo__image"
 				width="200"
 				height="200"
-				src={nathanmweller}
+				src={`/${nathanmweller}`}
 				alt="nathan m weller"
 			/>
 		</div>

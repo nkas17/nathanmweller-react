@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import FedPage from './pages/FedPage';
 import BlogPage from './pages/BlogPage';
@@ -14,12 +14,10 @@ class Main extends React.Component { // eslint-disable-line react/prefer-statele
 		return (
 			<BrowserRouter>
 				<main>
-					<Switch>
-						<Route exact path="/" component={HomePage} />
-						<Route exact path="/fed" component={FedPage} />
-						<Route exact path="/blog" component={BlogPage} />
-						<Route exact path="/about" component={AboutPage} />
-					</Switch>
+					<Route exact path="/" component={HomePage} />
+					<Route exact path="/fed" component={FedPage} />
+					<Route path="/blog" component={BlogPage} />
+					<Route exact path="/about" component={AboutPage} />
 				</main>
 			</BrowserRouter>
 		);

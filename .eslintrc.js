@@ -19,6 +19,7 @@ module.exports = {
 			"error",
 			"tab"
 		],
-		"no-tabs": "off"
+		"no-tabs": "off",
+		"quotes": ["error", "single", { "allowTemplateLiterals": true }]
 	}
 };

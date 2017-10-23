@@ -245,6 +245,18 @@ table {
   padding: 0 10px;
 }
 
+.unordered-list{
+  margin: 2% 4%;
+  padding: 1%;
+}
+
+.blog-entry{
+	background-color: whitesmoke;
+}
+
+.table-of-contents{
+	background-color: whitesmoke;
+}
 
 .logo__description{
   margin: 8% 5%;
@@ -317,14 +329,25 @@ table {
   text-indent: 2rem;  
 }
 
-.pre {
+.pre{
   display: block;
   margin: 1.5% 6%;
   word-break: break-all;
   word-wrap: break-word;
+	overflow-x: scroll;
   color: #E0DFDF;
 	background-color: rgba(36, 36, 36, 0.93);
-	overflow-x: scroll;
+  border-radius: 5px;
+  box-shadow: black 0px 0px 15px 0px;
+  border: 2px solid rgba(63, 62, 62, 0.9);
+  font: 1rem monospace;
+}
+
+.pre--white{
+  color: rgba(36, 36, 36, 0.93);
+  background-color: rgba(250, 250, 250, 0.952);
+  border: 2px solid rgba(200, 200, 200, .9);
+  box-shadow: #adacac 0px 0px 15px 0px;
 }
 
 .list{
@@ -368,6 +391,12 @@ table {
   }
 }
 
+.article__flex-item:nth-child(even){
+	margin-left: 1%;
+	order: -1;
+	margin-bottom: 0;
+}
+
 @media only screen and (max-width: 667px)
 {
   .page-header__description {
@@ -379,13 +408,6 @@ table {
 }
 
 @media only screen and (min-width: 768px){
-
-	.w3c-banner,
-	.mdn-banner {
-		display: block;
-		margin:	auto;
-  }
-  
   .page-header{
     text-align: left;
   }
@@ -393,17 +415,16 @@ table {
   .page-header__flex-item {
     flex: 1 1 44%;
   }
-
-  .page-header__title {
-    font: 3.5rem Boogaloo-Regular, "Cronus Round",herculanum, helvetica, arial, sans-serif;
-    font-weight: bold;
-  }
-	
 	.article__header{
 		position: sticky;
 		top: 0;
 	}
   
+  .page-header__title {
+    font: 3.5rem Boogaloo-Regular, "Cronus Round",herculanum, helvetica, arial, sans-serif;
+    font-weight: bold;
+  }
+
   .header_size_large{
     font-size: 2rem;
   }
@@ -412,16 +433,9 @@ table {
     font-size: 1.4rem;
   }
 
-  .flex-wrapper {
+  .page-header.flex-wrapper {
     flex-direction: row;
 	}
-	
-	.aside{
-		position: sticky;
-		top: 0;
-		height: 50%;
-	}
-
 
   .logo {
     margin-top: 1%;
@@ -432,11 +446,44 @@ table {
   .footer__logo{
     display: none;
   }
+}
+
+@media only screen and (min-width: 1220px){
+
+	.w3c-banner,
+	.mdn-banner {
+		display: block;
+		margin:	auto;
+  }
+  
+
+
+  .flex-wrapper {
+    flex-direction: row;
+	}
+
+	
+
+  .aside{
+		position: sticky;
+		top: 0;
+		height: 50%;
+  }
+  
+  .aside-blog {
+    min-width: 395px;
+}
   
 	.promo{
 		display: block;
 		background-color: whitesmoke;
 		padding: 10px;
+  }
+
+  .article__flex-item:nth-child(even){
+    flex: 1;
+    order: 1;
+    margin: 1.5% 1.5% 1.5% 0;
   }
 }
 

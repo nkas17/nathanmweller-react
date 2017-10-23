@@ -8,7 +8,7 @@ const Footer = () => (
 				className="logo__image"
 				width="200"
 				height="200"
-				src={nathanmweller}
+				src={`/${nathanmweller}`}
 				alt="nathan m weller"
 			/>
 			<p className="logo__description">
