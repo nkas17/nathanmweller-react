@@ -8,8 +8,8 @@
 	"license": "MIT",
 	"scripts": {
 		"start": "./node_modules/.bin/webpack-dev-server",
-		"build": "yarn run clean && webpack -p",
-		"build:test": "yarn run lean && webpack -d",
+    "build": "yarn run clean && webpack --config webpack.config.prod.js",
+		"build:test": "yarn run clean && webpack -d",
 		"clean": "node node_modules/rimraf/bin.js dist/*",
 		"lint": "./node_modules/.bin/eslint --ext .jsx --ext .js src webpack.config.*",
 		"lint:report": "./node_modules/.bin/eslint --ext .jsx --ext .js src --output-file ./report/eslint-report.html --format html",
@@ -43,7 +43,8 @@
 		"react": "^16.0.0",
 		"react-dom": "^16.0.0",
 		"react-hot-loader": "^3.0.0-beta.6",
-		"react-router-dom": "^4.2.2"
+		"react-router-dom": "^4.2.2",
+		"react-router-hash-link": "^1.1.1"
 	},
 	"jest": {
 		"modulePaths": [
