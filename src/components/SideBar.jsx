@@ -10,7 +10,7 @@ const SideBar = ({ children, additionalClass }) => (
 			<a className="link mdn-promo" href="https://developer.mozilla.org/en-US/">
 				<img
 					className="mdn-banner"
-					src={`/${mdn}`}
+					src={`${mdn}`}
 					alt="mdn"
 				/>
 			</a>
@@ -18,7 +18,7 @@ const SideBar = ({ children, additionalClass }) => (
 			<a className="link w3c-promo" href="https://www.w3.org/">
 				<img
 					className="w3c-banner"
-					src={`/${w3c}`}
+					src={`${w3c}`}
 					alt="w3c"
 				/>
 			</a>
