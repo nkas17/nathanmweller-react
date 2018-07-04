@@ -10,7 +10,8 @@ const Header = ({ alwaysShow }) => (
 			<h1 className="page-header__title">nathan m weller</h1>
 			<p className={`page-header__description${alwaysShow ? ' page-header__description--show' : ''}`}>
 				husband, father, software architect, web developer,
-				cook, photographer, fútbol player, gamer</p>
+				cook, photographer, fútbol player, gamer
+			</p>
 			<ContactInfo />
 		</div>
 		<NavMenu />

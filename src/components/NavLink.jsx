@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const NavLink = ({ displayText, to }) => (
 	<li className="nav__item">
 		<Link
-			className={'link nav__link'}
+			className="link nav__link"
 			to={to}
 		>
 			{displayText}

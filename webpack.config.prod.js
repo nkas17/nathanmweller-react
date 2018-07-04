@@ -1,51 +1,50 @@
 const { resolve, join } = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require('webpack');
 
 module.exports = {
+	mode: 'production',
 	resolve: {
 		modules: [
-			join(__dirname, 'src'),
 			'node_modules',
 		],
 		extensions: ['.js', '.jsx', '.json', '.css', '.scss'],
 	},
 
-	entry: './index.jsx',
+	entry: [
+		'./index.jsx',
+	],
 
 	output: {
-		// the output bundle
-		filename: 'bundle.js',
-
 		path: resolve(__dirname, 'dist'),
-
 	},
 
 	context: resolve(__dirname, 'src'),
 
-	devtool: 'source-map',
-
 	module: {
 		rules: [
 			{
-				test: /\.jsx?$/,
+				test: /\.jsx?/,
 				use: [
 					'babel-loader',
 				],
 				include: /src/,
 			},
 			{
-				test: /\.css$/,
-				use: ExtractTextPlugin.extract({
-					fallback: 'style-loader',
-					use: ['css-loader'],
-				}),
-			},
-			{
-				test: /\.json$/,
-				loader: 'json-loader',
-			},
+        test: /\.css$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            // options: {
+            //   // you can specify a publicPath here
+            //   // by default it use publicPath in webpackOptions.output
+            //   publicPath: '../'
+            // }
+          },
+          "css-loader"
+        ]
+      },
 			{
 				test: /\.(jpe?g|png|gif|ico)$/i,
 				loader: 'file-loader?name=[name].[ext]',
@@ -69,8 +68,12 @@ module.exports = {
 		],
 	},
 	plugins: [
-		// optimizes order
-		new ExtractTextPlugin('styles.css'),
+		new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: "[name].css",
+      chunkFilename: "[id].css"
+    }),
 
 		// // Moves the index.html file over and asset folder to the dist folder
 		new CopyWebpackPlugin([
@@ -88,17 +91,6 @@ module.exports = {
 			'process.env': {
 				NODE_ENV: JSON.stringify('production'),
 			},
-		}),
-		new webpack.optimize.UglifyJsPlugin({
-			beautify: false,
-			mangle: {
-				screw_ie8: true,
-				keep_fnames: true,
-			},
-			compress: {
-				screw_ie8: true,
-			},
-			comments: false,
 		}),
 	],
 };

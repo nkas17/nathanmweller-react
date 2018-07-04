@@ -19,6 +19,7 @@ module.exports = {
 			"error",
 			"tab"
 		],
+		"react/jsx-one-expression-per-line": "off",
 		"no-tabs": "off",
 		"quotes": ["error", "single", { "allowTemplateLiterals": true }]
 	}

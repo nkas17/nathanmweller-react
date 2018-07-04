@@ -75,7 +75,7 @@ export default () => (
 			{`Next up is the `}
 			<a className="link" href="https://facebook.github.io/react/">React</a>
 			{` re-write. `}
-			<Link className="link" to="/blog/a4">{`What Does It Mean To Choose React`}</Link>
+			<Link className="link" to="/blog/a4">What Does It Mean To Choose React</Link>
 		</BlogParagraph>
 	</div>
 );

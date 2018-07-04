@@ -123,7 +123,7 @@ export default () => (
 			<a className="link" href="https://nodejs.org/en/">Node.js</a>
 			{` we can begin! Join me again soon for next steps, getting started with `}
 			<a className="link" href="https://reactjs.org">React</a>{` - `}
-			<Link className="link" to="/blog/a5">{`Setting Up Our Development Environment.`}</Link>
+			<Link className="link" to="/blog/a5">Setting Up Our Development Environment.</Link>
 		</BlogParagraph>
 	</div>
 );

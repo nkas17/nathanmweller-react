@@ -5,8 +5,8 @@ import { HashLink as Link } from 'react-router-hash-link';
 /**
  * Idea here is to map over the contents and produce a table of contents
  * mpa over categories then map over each article
- * 
- * @param {*} param0 
+ *
+ * @param {*} param0
  */
 const TableOfContents = ({ contents, title }) => (
 	<div className="table-of-contents">

@@ -16,7 +16,8 @@ const BlogPage = () => (
 			<div className="flex-item main__flex-item">
 				<header className="main__header">
 					<h2 id="blog" className="header header_size_large">
-						blog<span className="dilbert">&nbsp;</span></h2>
+						blog<span className="dilbert">&nbsp;</span>
+					</h2>
 				</header>
 				<article className="article flex-wrapper">
 					<div className="article__content flex-item article__flex-item">
@@ -41,11 +42,11 @@ const BlogPage = () => (
 						/>
 					</div>
 					<SideBar
-						additionalClass={'aside-blog'}
+						additionalClass="aside-blog"
 					>
 						<TableOfContents
 							contents={blogIndex}
-							title={'Previous Articles'}
+							title="Previous Articles"
 						/>
 					</SideBar>
 					<Footer />

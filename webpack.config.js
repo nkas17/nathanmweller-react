@@ -1,54 +1,67 @@
 const webpack = require('webpack');
-const path = require('path');
+const { resolve } = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const config = {
-	entry: {
-		app: [
-			'react-hot-loader/patch',
-			`${path.resolve(__dirname, 'src')}/index.jsx`,
-		],
-	},
+module.exports = {
+	mode: 'development',
 	resolve: {
+		modules: [
+			'node_modules',
+		],
 		extensions: ['.js', '.jsx', '.json', '.css', '.scss'],
 	},
-	devServer: {
-		contentBase: './dist',
-		hot: true,
-		historyApiFallback: true,
-		// respond to 404s with index.html
-	},
-	output: {
-		path: path.resolve(__dirname, 'dist'),
-		filename: 'bundle.js',
-	},
-	plugins: [
-		new CopyWebpackPlugin([
-			{ from: './src/index.html' },
-		]),
-
-		new ExtractTextPlugin('styles.css'),
-
-		new webpack.HotModuleReplacementPlugin(),
-
-		// prints more readable module names in the browser console on HMR updates
-		new webpack.NamedModulesPlugin(),
+	entry: [
+		'./index.jsx',
 	],
+	output: {
+	},
+	context: resolve(__dirname, 'src'),
+	devtool: 'inline-source-map',
+	devServer: {
+		hot: true,
+		contentBase: resolve(__dirname, './dist'),
+		historyApiFallback: {
+			rewrites: [
+				{ to: '/index.html' },
+			],
+		},
+	},
 	module: {
-		loaders: [
+		rules: [
 			{
 				test: /\.jsx?/,
-				include: `${path.resolve(__dirname, 'src')}`,
-				loader: 'babel-loader',
+				use: [
+					'babel-loader',
+				],
+				include: /src/,
 			},
+			// {
+			// 	test: /\.css$/,
+			// 	use: [
+			// 		{ loader: 'style-loader' },
+			// 		{
+			// 			loader: 'css-loader',
+			// 			options: {
+			// 				modules: false,
+			// 			},
+			// 		},
+			// 	],
+			// },
 			{
-				test: /\.css$/,
-				use: ExtractTextPlugin.extract({
-					fallback: 'style-loader',
-					use: ['css-loader'],
-				}),
-			},
+        test: /\.css$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            // options: {
+            //   // you can specify a publicPath here
+            //   // by default it use publicPath in webpackOptions.output
+            //   publicPath: '../'
+            // }
+          },
+          "css-loader"
+        ]
+      },
 			{
 				test: /\.(jpe?g|png|gif|ico)$/i,
 				loader: 'file-loader?name=[name].[ext]',
@@ -71,6 +84,22 @@ const config = {
 			},
 		],
 	},
-};
+	plugins: [
+		new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: "[name].css",
+      chunkFilename: "[id].css"
+    }),
+		// // Moves the index.html file over and asset folder to the dist folder
+		new CopyWebpackPlugin([
+			// {output}/dist/file.txt
+			{ from: 'index.html' },
 
-module.exports = config;
+			// 	// Copy directory contents to {output}/to/directory/
+			// 	{ from: 'assets', to: 'assets' },
+		]),
+		// new ExtractTextPlugin('styles.css'),
+		new webpack.HotModuleReplacementPlugin(),
+	],
+};

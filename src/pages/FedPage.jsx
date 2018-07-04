@@ -10,7 +10,8 @@ const FedPage = () => (
 			<div className="flex-item main__flex-item">
 				<header className="main__header">
 					<h2 className="header header_size_large">front-end development
-						<span className="dilbert">&nbsp;</span></h2>
+						<span className="dilbert">&nbsp;</span>
+					</h2>
 				</header>
 				<article className="article flex-wrapper">
 					<div className="flex-item article__content article__flex-item">
@@ -43,7 +44,7 @@ const FedPage = () => (
 							</div>
 						</a>
 						<p className="article__paragraph">
-							{"Why is today's front-end development so complex, it used to be so easy, just some html, a little jQuery and some css..."}
+							{'Why is today\'s front-end development so complex, it used to be so easy, just some html, a little jQuery and some css...'}
 							<a className="link" href="https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f">how it feels</a> is a great
 						article illustrating this.
 						</p>

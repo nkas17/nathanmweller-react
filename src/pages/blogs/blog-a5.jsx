@@ -17,7 +17,7 @@ export default () => (
 			these tools (the "create-react-app" also uses these under the hood).`}
 		</BlogParagraph>
 		<BlogParagraph>
-			<span className="font_weight_bold">{`Let's dive right in from scratch`}</span>
+			<span className="font_weight_bold">Let's dive right in from scratch</span>
 		</BlogParagraph>
 		<BlogParagraph>
 			{`First, create a directory and initialize it with yarn or npm.
@@ -280,7 +280,8 @@ export default () => (
     ]
   }
 
-`}</code>
+`}
+			</code>
 		</pre>
 		<BlogParagraph>
 			{`Here webpack is using the babel loader, and looking in the src directory for files with an extension .jsx.
@@ -291,12 +292,12 @@ export default () => (
 			Use yarn to add react and react-dom`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
   $ yarn add react react-dom
 
   $ npm install --save react react-dom
 
-`}</code>
+			</code>
 		</pre>
 		<BlogParagraph>
 			{`Now replace the existing console.log statement in index.jsx with the following:`}
@@ -319,26 +320,28 @@ export default () => (
     document.getElementById('app')
   );
 
-`}</code>
+`}
+			</code>
 		</pre>
 		<BlogParagraph>
 			{`Then save and run the webpack command again:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
   $ ./node_modules/.bin/webpack -d
 
-`}</code>
+			</code>
 		</pre>
 		<BlogParagraph>
 			{`Now reload the index.html file and you should see the 
 			following in the browser:`}
-			`</BlogParagraph>
+			`
+		</BlogParagraph>
 		<pre className="pre pre--white">
-			<code className="code">{`
+			<code className="code">
   Hello React!
 
-`}</code>
+			</code>
 		</pre>
 		<BlogParagraph>
 			{`You can also split out the App class code to a separate file App.jsx like
@@ -356,7 +359,8 @@ export default () => (
     }
   }
 
-`}</pre>
+`}
+			</pre>
 		</code>
 		<BlogParagraph>
 			{`Which then leaves only this in index.jsx`}
@@ -386,7 +390,8 @@ export default () => (
     extensions: ['.js', '.jsx', '.json', '.css', '.scss'],
   },
 
-`}</code>
+`}
+			</code>
 		</pre>
 		<BlogParagraph>
 			{`And that's it! You now have React setup with babel and webpack. Next up we'll look into adding hot reloading and setup

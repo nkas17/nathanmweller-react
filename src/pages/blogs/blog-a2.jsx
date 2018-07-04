@@ -5,7 +5,7 @@ import BlogParagraph from '../../components/BlogParagraph';
 export default () => (
 	<div>
 		<BlogParagraph>
-			{`The previous `}<Link className="link" to="/blog/a1">{`Creating This Website`}</Link> {`article was my first blog and I feel it went pretty
+			{`The previous `}<Link className="link" to="/blog/a1">Creating This Website</Link> {`article was my first blog and I feel it went pretty
 			well. I think the primary take away is that a blog is really just writing an article/journal entry. Neither of which
 			I have any formal training or education in. Other than a writing 101 course in college 15 years ago. I didn't exactly
 			follow the rough outline that I laid out in that article. Primarily I left out most of the technical details. So,
