@@ -37,7 +37,9 @@ const AboutPage = () => (
 							<h3 className="header header_size_medium">creations</h3>
 						</header>
 						<p className="article__paragraph"><a className="link" href="http://games.nathanmweller.com">games</a>, who {'doesn\'t'} love games</p>
-						<p className="article__paragraph"><a className="link" href="http://recipes.nathanmweller.com">recipes</a>, and more...(a secure site)</p>
+						<p className="article__paragraph"><a className="link" href="https://recipes.nathanmweller.com">recipes</a></p>
+						<p className="article__paragraph"><a className="link" href="https://local-weather.nathanmweller.com">local weather</a></p>
+						<p className="article__paragraph"><a className="link" href="http://random-quote.nathanmweller.com">random quote</a></p>
 					</div>
 					<Footer />
 				</article>
