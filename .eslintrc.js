@@ -9,18 +9,24 @@ module.exports = {
 	"rules": {
 		"indent": [
 			"error",
-			"tab"
+			"tab",
 		],
 		"react/jsx-indent": [
 			"error",
-			"tab"
+			"tab",
 		],
 		"react/jsx-indent-props": [
 			"error",
-			"tab"
+			"tab",
 		],
 		"react/jsx-one-expression-per-line": "off",
 		"no-tabs": "off",
-		"quotes": ["error", "single", { "allowTemplateLiterals": true }]
+		"quotes": [
+			"error",
+			"single",
+			{
+				"allowTemplateLiterals": true,
+			},
+		],
 	}
-};
+}

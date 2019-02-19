@@ -1,119 +1,327 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<main
-  className="main flex-wrapper"
->
-  <div
-    className="flex-item main__flex-item"
+Array [
+  <header
+    className="page-header flex-wrapper"
   >
-    <header
-      className="main__header"
+    <div
+      className="personal-info page-header__flex-item flex-item"
     >
-      <h2
-        className="header header_size_large"
+      <h1
+        className="page-header__title"
       >
-        about
-        <span
-          className="dilbert"
+        nathan m weller
+      </h1>
+      <p
+        className="page-header__description"
+      >
+        husband, father, software architect, web developer, cook, photographer, fútbol player, gamer
+      </p>
+      <ul
+        className="contact-info page-header__contact-info"
+      >
+        <li
+          className="contact-info__item"
         >
-           
-        </span>
-      </h2>
-    </header>
-    <article
-      className="article flex-wrapper"
+          <a
+            className="link"
+            href="mailto:nathan@nathanmweller.com?subject=Reaching%20Out"
+          >
+            <i
+              className="fa fa-envelope-o"
+            />
+          </a>
+        </li>
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="https://www.linkedin.com/pub/nathan-weller/52/b05/552"
+          >
+            <i
+              className="fa fa-linkedin"
+            />
+          </a>
+        </li>
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="https://twitter.com/nkas17_m"
+          >
+            <i
+              className="fa fa-twitter"
+            />
+          </a>
+        </li>
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="https://plus.google.com/u/0/100022763393186980494/posts/p/pub"
+          >
+            <i
+              className="fa fa-google-plus"
+            />
+          </a>
+        </li>
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="https://www.facebook.com/nathan.weller.9"
+          >
+            <i
+              className="fa fa-facebook"
+            />
+          </a>
+        </li>
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="tel:6168430170"
+          >
+            <i
+              className="fa fa-phone"
+            />
+          </a>
+        </li>
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="sms:6168430170"
+          >
+            <i
+              className="fa fa-comment-o"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <nav
+      className="nav flex-item"
     >
-      <div
-        className="flex-item article__content"
+      <ul>
+        <li
+          className="nav__item"
+        >
+          <a
+            className="link nav__link"
+            href="/"
+            onClick={[Function]}
+          >
+            home
+          </a>
+        </li>
+        <li
+          className="nav__item"
+        >
+          <a
+            className="link nav__link"
+            href="/fed"
+            onClick={[Function]}
+          >
+            fed
+          </a>
+        </li>
+        <li
+          className="nav__item"
+        >
+          <a
+            className="link nav__link"
+            href="/blog/a1"
+            onClick={[Function]}
+          >
+            blog
+          </a>
+        </li>
+        <li
+          className="nav__item"
+        >
+          <a
+            className="link nav__link"
+            href="/about"
+            onClick={[Function]}
+          >
+            about
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      className="logo flex-item"
+    >
+      <img
+        alt="nathan m weller"
+        className="logo__image"
+        height="200"
+        src="test-file-stub"
+        width="200"
+      />
+    </div>
+  </header>,
+  <main
+    className="main flex-wrapper"
+  >
+    <div
+      className="flex-item main__flex-item"
+    >
+      <header
+        className="main__header"
       >
-        <header
-          className="main__header article__header"
+        <h2
+          className="header header_size_large"
         >
-          <h3
-            className="header header_size_medium"
+          about
+          <span
+            className="dilbert"
           >
-            experience
-          </h3>
-        </header>
-        <p
-          className="article__paragraph"
+             
+          </span>
+        </h2>
+      </header>
+      <article
+        className="article flex-wrapper"
+      >
+        <div
+          className="flex-item article__content"
         >
-          13+ years software development, 9+ years web development
-        </p>
-        <header
-          className="main__header article__header"
-        >
-          <h3
-            className="header header_size_medium"
+          <header
+            className="main__header article__header"
           >
-            web development
-          </h3>
-        </header>
-        <p
-          className="article__paragraph"
-        >
-          JavaScript, ES2015, Node.js, npm, React.js, Redux.js, Jest, Enzyme, Lodash, jQuery, Backbone.js, Underscore.js, HTML, CSS, Sass, Bootstrap, responsive design, Google Analytics, Git, PRPC
-        </p>
-        <header
-          className="main__header article__header"
-        >
-          <h3
-            className="header header_size_medium"
+            <h3
+              className="header header_size_medium"
+            >
+              experience
+            </h3>
+          </header>
+          <p
+            className="article__paragraph"
           >
-            education
-          </h3>
-        </header>
-        <p
-          className="article__paragraph"
-        >
-          BS in Computer Science with honors from Michigan State University
-        </p>
-        <p
-          className="article__paragraph"
-        >
-          <a
-            className="link"
-            href="https://www.codeschool.com/users/2817163"
+            13+ years software development, 9+ years web development
+          </p>
+          <header
+            className="main__header article__header"
           >
-            Code School Badges
-          </a>
-        </p>
-        <header
-          className="main__header article__header"
-        >
-          <h3
-            className="header header_size_medium"
+            <h3
+              className="header header_size_medium"
+            >
+              web development
+            </h3>
+          </header>
+          <p
+            className="article__paragraph"
           >
-            creations
-          </h3>
-        </header>
-        <p
-          className="article__paragraph"
-        >
-          <a
-            className="link"
-            href="http://games.nathanmweller.com"
+            JavaScript, ES2015, Node.js, npm, React.js, Redux.js, Jest, Enzyme, Lodash, jQuery, Backbone.js, Underscore.js, HTML, CSS, Sass, Bootstrap, responsive design, Google Analytics, Git, PRPC
+          </p>
+          <header
+            className="main__header article__header"
           >
-            games
-          </a>
-          , who 
-          doesn't
-           love games
-        </p>
-        <p
-          className="article__paragraph"
-        >
-          <a
-            className="link"
-            href="http://recipes.nathanmweller.com"
+            <h3
+              className="header header_size_medium"
+            >
+              education
+            </h3>
+          </header>
+          <p
+            className="article__paragraph"
           >
-            recipes
-          </a>
-          , and more...(a secure site)
-        </p>
-      </div>
-    </article>
-  </div>
-</main>
+            BS in Computer Science with honors from Michigan State University
+          </p>
+          <p
+            className="article__paragraph"
+          >
+            <a
+              className="link"
+              href="https://www.codeschool.com/users/2817163"
+            >
+              Code School Badges
+            </a>
+          </p>
+          <header
+            className="main__header article__header"
+          >
+            <h3
+              className="header header_size_medium"
+            >
+              creations
+            </h3>
+          </header>
+          <p
+            className="article__paragraph"
+          >
+            <a
+              className="link"
+              href="http://games.nathanmweller.com"
+            >
+              games
+            </a>
+            , who 
+            doesn't
+             love games
+          </p>
+          <p
+            className="article__paragraph"
+          >
+            <a
+              className="link"
+              href="https://recipes.nathanmweller.com"
+            >
+              recipes
+            </a>
+          </p>
+          <p
+            className="article__paragraph"
+          >
+            <a
+              className="link"
+              href="https://local-weather.nathanmweller.com"
+            >
+              local weather
+            </a>
+          </p>
+          <p
+            className="article__paragraph"
+          >
+            <a
+              className="link"
+              href="http://random-quote.nathanmweller.com"
+            >
+              random quote
+            </a>
+          </p>
+        </div>
+        <footer
+          className="footer flex-item"
+        >
+          <div
+            className="logo footer__logo"
+          >
+            <img
+              alt="nathan m weller"
+              className="logo__image"
+              height="200"
+              src="test-file-stub"
+              width="200"
+            />
+            <p
+              className="logo__description"
+            >
+              husband, father, software architect, web developer, cook, photographer, fútbol player, gamer
+            </p>
+          </div>
+        </footer>
+      </article>
+    </div>
+  </main>,
+]
 `;

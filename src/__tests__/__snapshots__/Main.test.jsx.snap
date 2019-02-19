@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
         nathan m weller
       </h1>
       <p
-        className="page-header__description"
+        className="page-header__description page-header__description--show"
       >
         husband, father, software architect, web developer, cook, photographer, fútbol player, gamer
       </p>
@@ -116,7 +116,7 @@ exports[`renders correctly 1`] = `
         >
           <a
             className="link nav__link"
-            href="/"
+            href="#/"
             onClick={[Function]}
           >
             home
@@ -127,7 +127,7 @@ exports[`renders correctly 1`] = `
         >
           <a
             className="link nav__link"
-            href="fed"
+            href="#/fed"
             onClick={[Function]}
           >
             fed
@@ -138,7 +138,7 @@ exports[`renders correctly 1`] = `
         >
           <a
             className="link nav__link"
-            href="blog"
+            href="#/blog/a1"
             onClick={[Function]}
           >
             blog
@@ -149,7 +149,7 @@ exports[`renders correctly 1`] = `
         >
           <a
             className="link nav__link"
-            href="about"
+            href="#/about"
             onClick={[Function]}
           >
             about
@@ -158,7 +158,7 @@ exports[`renders correctly 1`] = `
       </ul>
     </nav>
     <div
-      className="logo flex-item"
+      className="logo flex-item logo--show"
     >
       <img
         alt="nathan m weller"

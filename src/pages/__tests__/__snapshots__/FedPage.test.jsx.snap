@@ -1,195 +1,364 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<main
-  className="main flex-wrapper"
->
-  <div
-    className="flex-item main__flex-item"
+Array [
+  <header
+    className="page-header flex-wrapper"
   >
-    <header
-      className="main__header"
+    <div
+      className="personal-info page-header__flex-item flex-item"
     >
-      <h2
-        className="header header_size_large"
+      <h1
+        className="page-header__title"
       >
-        front-end development
-        <span
-          className="dilbert"
-        >
-           
-        </span>
-      </h2>
-    </header>
-    <article
-      className="article flex-wrapper"
-    >
-      <div
-        className="flex-item article__content article__flex-item"
+        nathan m weller
+      </h1>
+      <p
+        className="page-header__description"
       >
-        <header
-          className="main__header article__header"
+        husband, father, software architect, web developer, cook, photographer, fútbol player, gamer
+      </p>
+      <ul
+        className="contact-info page-header__contact-info"
+      >
+        <li
+          className="contact-info__item"
         >
-          <h3
-            className="header header_size_medium"
-          >
-            resources
-          </h3>
-        </header>
-        <p
-          className="article__paragraph"
-        >
-          MDN - 
           <a
             className="link"
+            href="mailto:nathan@nathanmweller.com?subject=Reaching%20Out"
+          >
+            <i
+              className="fa fa-envelope-o"
+            />
+          </a>
+        </li>
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="https://www.linkedin.com/pub/nathan-weller/52/b05/552"
+          >
+            <i
+              className="fa fa-linkedin"
+            />
+          </a>
+        </li>
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="https://twitter.com/nkas17_m"
+          >
+            <i
+              className="fa fa-twitter"
+            />
+          </a>
+        </li>
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="https://plus.google.com/u/0/100022763393186980494/posts/p/pub"
+          >
+            <i
+              className="fa fa-google-plus"
+            />
+          </a>
+        </li>
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="https://www.facebook.com/nathan.weller.9"
+          >
+            <i
+              className="fa fa-facebook"
+            />
+          </a>
+        </li>
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="tel:6168430170"
+          >
+            <i
+              className="fa fa-phone"
+            />
+          </a>
+        </li>
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="sms:6168430170"
+          >
+            <i
+              className="fa fa-comment-o"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <nav
+      className="nav flex-item"
+    >
+      <ul>
+        <li
+          className="nav__item"
+        >
+          <a
+            className="link nav__link"
+            href="/"
+            onClick={[Function]}
+          >
+            home
+          </a>
+        </li>
+        <li
+          className="nav__item"
+        >
+          <a
+            className="link nav__link"
+            href="/fed"
+            onClick={[Function]}
+          >
+            fed
+          </a>
+        </li>
+        <li
+          className="nav__item"
+        >
+          <a
+            className="link nav__link"
+            href="/blog/a1"
+            onClick={[Function]}
+          >
+            blog
+          </a>
+        </li>
+        <li
+          className="nav__item"
+        >
+          <a
+            className="link nav__link"
+            href="/about"
+            onClick={[Function]}
+          >
+            about
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      className="logo flex-item"
+    >
+      <img
+        alt="nathan m weller"
+        className="logo__image"
+        height="200"
+        src="test-file-stub"
+        width="200"
+      />
+    </div>
+  </header>,
+  <main
+    className="main flex-wrapper"
+  >
+    <div
+      className="flex-item main__flex-item"
+    >
+      <header
+        className="main__header"
+      >
+        <h2
+          className="header header_size_large"
+        >
+          front-end development
+          <span
+            className="dilbert"
+          >
+             
+          </span>
+        </h2>
+      </header>
+      <article
+        className="article flex-wrapper"
+      >
+        <div
+          className="flex-item article__content article__flex-item"
+        >
+          <header
+            className="main__header article__header"
+          >
+            <h3
+              className="header header_size_medium"
+            >
+              resources
+            </h3>
+          </header>
+          <p
+            className="article__paragraph"
+          >
+            MDN - 
+            <a
+              className="link"
+              href="https://developer.mozilla.org/en-US/"
+            >
+              Mozilla Developer Network
+            </a>
+             is a fantastic resource for learning about the front-end -
+          </p>
+          <a
+            className="link div-link"
             href="https://developer.mozilla.org/en-US/"
           >
-            Mozilla Developer Network
+            <div>
+              <blockquote
+                className="article__blockquote"
+              >
+                All parts of MDN (docs and the site itself) are created by an open community of developers. Please join us! ~ MDN homepage
+              </blockquote>
+            </div>
           </a>
-           is a fantastic resource for learning about the front-end -
-        </p>
-        <a
-          className="link div-link"
-          href="https://developer.mozilla.org/en-US/"
-        >
-          <div>
-            <blockquote
-              className="article__blockquote"
+          <p
+            className="article__paragraph"
+          >
+            <a
+              className="link"
+              href="https://frontendmasters.com/books/front-end-handbook/2017/"
             >
-              All parts of MDN (docs and the site itself) are created by an open community of developers. Please join us! ~ MDN homepage
-            </blockquote>
-          </div>
-        </a>
-        <p
-          className="article__paragraph"
-        >
+              Front-end-handbook
+            </a>
+             is another great resource from frontendmasters -
+          </p>
           <a
-            className="link"
+            className="link div-link"
             href="https://frontendmasters.com/books/front-end-handbook/2017/"
           >
-            Front-end-handbook
+            <div>
+              <blockquote
+                className="article__blockquote"
+              >
+                This is a guide that anyone could use to learn about the practice of front-end development. It broadly outlines and discusses the practice of front-end engineering ~ Cody Lindley
+              </blockquote>
+            </div>
           </a>
-           is another great resource from frontendmasters -
-        </p>
-        <a
-          className="link div-link"
-          href="https://frontendmasters.com/books/front-end-handbook/2017/"
-        >
-          <div>
-            <blockquote
-              className="article__blockquote"
+          <p
+            className="article__paragraph"
+          >
+            Why is today's front-end development so complex, it used to be so easy, just some html, a little jQuery and some css...
+            <a
+              className="link"
+              href="https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f"
             >
-              This is a guide that anyone could use to learn about the practice of front-end development. It broadly outlines and discusses the practice of front-end engineering ~ Cody Lindley
-            </blockquote>
-          </div>
-        </a>
-        <p
-          className="article__paragraph"
-        >
-          Why is today's front-end development so complex, it used to be so easy, just some html, a little jQuery and some css...
+              how it feels
+            </a>
+             is a great article illustrating this.
+          </p>
           <a
-            className="link"
+            className="link div-link"
             href="https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f"
           >
-            how it feels
+            <div>
+              <blockquote
+                className="article__blockquote"
+              >
+                Oh my, no one uses jQuery anymore. You should try learning React, it’s 2016. ~ Jose Aguinaga
+              </blockquote>
+            </div>
           </a>
-           is a great article illustrating this.
-        </p>
-        <a
-          className="link div-link"
-          href="https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f"
-        >
-          <div>
-            <blockquote
-              className="article__blockquote"
+          <p
+            className="article__paragraph"
+          >
+            Images on our sites are costing our users a lot of money...
+            <a
+              className="link"
+              href="https://www.html5rocks.com/en/tutorials/speed/img-compression/"
             >
-              Oh my, no one uses jQuery anymore. You should try learning React, it’s 2016. ~ Jose Aguinaga
-            </blockquote>
-          </div>
-        </a>
-        <p
-          className="article__paragraph"
-        >
-          Images on our sites are costing our users a lot of money...
+              Image Compression for Web Developers
+            </a>
+                   can help us decide how to save our users money.
+          </p>
           <a
-            className="link"
+            className="link div-link"
             href="https://www.html5rocks.com/en/tutorials/speed/img-compression/"
           >
-            Image Compression for Web Developers
-          </a>
-                 can help us decide how to save our users money.
-        </p>
-        <a
-          className="link div-link"
-          href="https://www.html5rocks.com/en/tutorials/speed/img-compression/"
-        >
-          <div>
-            <blockquote
-              className="article__blockquote"
-            >
-              As images continue to be the largest part of webpage content, it’s critically important for web developers to take
-              <em
-                className="emphasis"
+            <div>
+              <blockquote
+                className="article__blockquote"
               >
-                 aggressive 
-              </em>
-              control of their image sizes and quality in order to deliver a fastest loading, responsive site for their users. ~ Colt McAnlis
-            </blockquote>
+                As images continue to be the largest part of webpage content, it’s critically important for web developers to take
+                <em
+                  className="emphasis"
+                >
+                   aggressive 
+                </em>
+                control of their image sizes and quality in order to deliver a fastest loading, responsive site for their users. ~ Colt McAnlis
+              </blockquote>
+            </div>
+          </a>
+        </div>
+        <aside
+          className="aside  article__aside article__flex-item"
+        >
+          <div
+            className="promo"
+          >
+            <a
+              className="link mdn-promo"
+              href="https://developer.mozilla.org/en-US/"
+            >
+              <img
+                alt="mdn"
+                className="mdn-banner"
+                src="test-file-stub"
+              />
+            </a>
+            <hr
+              className="hr"
+            />
+            <a
+              className="link w3c-promo"
+              href="https://www.w3.org/"
+            >
+              <img
+                alt="w3c"
+                className="w3c-banner"
+                src="test-file-stub"
+              />
+            </a>
           </div>
-        </a>
-      </div>
-      <aside
-        className="aside article__aside"
-      >
-        <div
-          className="promo flex-item aside__flex-item"
+        </aside>
+        <footer
+          className="footer flex-item"
         >
-          <a
-            className="link mdn-promo"
-            href="https://developer.mozilla.org/en-US/"
+          <div
+            className="logo footer__logo"
           >
             <img
-              alt="mdn"
-              className="mdn-banner"
+              alt="nathan m weller"
+              className="logo__image"
+              height="200"
               src="test-file-stub"
+              width="200"
             />
-          </a>
-          <hr
-            className="hr"
-          />
-          <a
-            className="link w3c-promo"
-            href="https://www.w3.org/"
-          >
-            <img
-              alt="w3c"
-              className="w3c-banner"
-              src="test-file-stub"
-            />
-          </a>
-        </div>
-      </aside>
-      <footer
-        className="footer flex-item"
-      >
-        <div
-          className="logo footer__logo"
-        >
-          <img
-            alt="nathan m weller"
-            className="logo__image"
-            height="200"
-            src="test-file-stub"
-            width="200"
-          />
-          <p
-            className="logo__description"
-          >
-            husband, father, software architect, web developer, cook, photographer, fútbol player, gamer
-          </p>
-        </div>
-      </footer>
-    </article>
-  </div>
-</main>
+            <p
+              className="logo__description"
+            >
+              husband, father, software architect, web developer, cook, photographer, fútbol player, gamer
+            </p>
+          </div>
+        </footer>
+      </article>
+    </div>
+  </main>,
+]
 `;

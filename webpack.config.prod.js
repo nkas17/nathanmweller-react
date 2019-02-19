@@ -1,6 +1,6 @@
-const { resolve, join } = require('path');
+const { resolve } = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
 
 module.exports = {
@@ -32,19 +32,19 @@ module.exports = {
 				include: /src/,
 			},
 			{
-        test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            // options: {
-            //   // you can specify a publicPath here
-            //   // by default it use publicPath in webpackOptions.output
-            //   publicPath: '../'
-            // }
-          },
-          "css-loader"
-        ]
-      },
+				test: /\.css$/,
+				use: [
+					{
+						loader: MiniCssExtractPlugin.loader,
+						// options: {
+						//   // you can specify a publicPath here
+						//   // by default it use publicPath in webpackOptions.output
+						//   publicPath: '../'
+						// }
+					},
+					'css-loader',
+				],
+			},
 			{
 				test: /\.(jpe?g|png|gif|ico)$/i,
 				loader: 'file-loader?name=[name].[ext]',
@@ -69,11 +69,11 @@ module.exports = {
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-      // Options similar to the same options in webpackOptions.output
-      // both options are optional
-      filename: "[name].css",
-      chunkFilename: "[id].css"
-    }),
+			// Options similar to the same options in webpackOptions.output
+			// both options are optional
+			filename: '[name].css',
+			chunkFilename: '[id].css',
+		}),
 
 		// // Moves the index.html file over and asset folder to the dist folder
 		new CopyWebpackPlugin([

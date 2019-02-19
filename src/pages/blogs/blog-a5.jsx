@@ -17,7 +17,7 @@ export default () => (
 			these tools (the "create-react-app" also uses these under the hood).`}
 		</BlogParagraph>
 		<BlogParagraph>
-			<span className="font_weight_bold">Let's dive right in from scratch</span>
+			<span className="font_weight_bold">Let&apos;s dive right in from scratch</span>
 		</BlogParagraph>
 		<BlogParagraph>
 			{`First, create a directory and initialize it with yarn or npm.
@@ -201,8 +201,8 @@ export default () => (
 			bundle.js file in the output directory "dist" and copies our index.html file.`}
 		</BlogParagraph>
 		<BlogParagraph>
-			{`Now open the index.html file in the browser and look at the console. 
-			You will see what we logged out:`}
+			{`Now open the index.html file in the browser and look at the console.
+			 You will see what we logged out:`}
 		</BlogParagraph>
 		<pre className="pre">
 			<code className="code">{`
@@ -293,9 +293,9 @@ export default () => (
 		</BlogParagraph>
 		<pre className="pre">
 			<code className="code">
-  $ yarn add react react-dom
+				$ yarn add react react-dom
 
-  $ npm install --save react react-dom
+				$ npm install --save react react-dom
 
 			</code>
 		</pre>
@@ -328,7 +328,7 @@ export default () => (
 		</BlogParagraph>
 		<pre className="pre">
 			<code className="code">
-  $ ./node_modules/.bin/webpack -d
+				$ ./node_modules/.bin/webpack -d
 
 			</code>
 		</pre>
@@ -339,7 +339,7 @@ export default () => (
 		</BlogParagraph>
 		<pre className="pre pre--white">
 			<code className="code">
-  Hello React!
+				Hello React!
 
 			</code>
 		</pre>
@@ -395,7 +395,7 @@ export default () => (
 		</pre>
 		<BlogParagraph>
 			{`And that's it! You now have React setup with babel and webpack. Next up we'll look into adding hot reloading and setup
-			some scripts in our package.json file. Adding these will enhance the development environment. Also, if you havent
+			some scripts in our package.json file. Adding these will enhance the development environment. Also, if you haven't
 			already I highly recommend using Chrome and getting the React Dev tools for chrome. This will allow you to see the
 			details regarding your react components in Chrome.`}
 		</BlogParagraph>

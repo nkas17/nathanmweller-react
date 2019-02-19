@@ -1,7 +1,351 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<p>
-  my blog page
-</p>
+Array [
+  <header
+    className="page-header flex-wrapper"
+  >
+    <div
+      className="personal-info page-header__flex-item flex-item"
+    >
+      <h1
+        className="page-header__title"
+      >
+        nathan m weller
+      </h1>
+      <p
+        className="page-header__description"
+      >
+        husband, father, software architect, web developer, cook, photographer, fútbol player, gamer
+      </p>
+      <ul
+        className="contact-info page-header__contact-info"
+      >
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="mailto:nathan@nathanmweller.com?subject=Reaching%20Out"
+          >
+            <i
+              className="fa fa-envelope-o"
+            />
+          </a>
+        </li>
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="https://www.linkedin.com/pub/nathan-weller/52/b05/552"
+          >
+            <i
+              className="fa fa-linkedin"
+            />
+          </a>
+        </li>
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="https://twitter.com/nkas17_m"
+          >
+            <i
+              className="fa fa-twitter"
+            />
+          </a>
+        </li>
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="https://plus.google.com/u/0/100022763393186980494/posts/p/pub"
+          >
+            <i
+              className="fa fa-google-plus"
+            />
+          </a>
+        </li>
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="https://www.facebook.com/nathan.weller.9"
+          >
+            <i
+              className="fa fa-facebook"
+            />
+          </a>
+        </li>
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="tel:6168430170"
+          >
+            <i
+              className="fa fa-phone"
+            />
+          </a>
+        </li>
+        <li
+          className="contact-info__item"
+        >
+          <a
+            className="link"
+            href="sms:6168430170"
+          >
+            <i
+              className="fa fa-comment-o"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <nav
+      className="nav flex-item"
+    >
+      <ul>
+        <li
+          className="nav__item"
+        >
+          <a
+            className="link nav__link"
+            href="/"
+            onClick={[Function]}
+          >
+            home
+          </a>
+        </li>
+        <li
+          className="nav__item"
+        >
+          <a
+            className="link nav__link"
+            href="/fed"
+            onClick={[Function]}
+          >
+            fed
+          </a>
+        </li>
+        <li
+          className="nav__item"
+        >
+          <a
+            className="link nav__link"
+            href="/blog/a1"
+            onClick={[Function]}
+          >
+            blog
+          </a>
+        </li>
+        <li
+          className="nav__item"
+        >
+          <a
+            className="link nav__link"
+            href="/about"
+            onClick={[Function]}
+          >
+            about
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      className="logo flex-item"
+    >
+      <img
+        alt="nathan m weller"
+        className="logo__image"
+        height="200"
+        src="test-file-stub"
+        width="200"
+      />
+    </div>
+  </header>,
+  <main
+    className="main flex-wrapper"
+  >
+    <div
+      className="flex-item main__flex-item"
+    >
+      <header
+        className="main__header"
+      >
+        <h2
+          className="header header_size_large"
+          id="blog"
+        >
+          blog
+          <span
+            className="dilbert"
+          >
+             
+          </span>
+        </h2>
+      </header>
+      <article
+        className="article flex-wrapper"
+      >
+        <div
+          className="article__content flex-item article__flex-item"
+        />
+        <aside
+          className="aside aside-blog article__aside article__flex-item"
+        >
+          <div
+            className="table-of-contents"
+          >
+            <header
+              className="main__header article__header"
+            >
+              <h3
+                className="header header_size_medium"
+              >
+                Previous Articles
+              </h3>
+            </header>
+            <details
+              className="details"
+            >
+              <summary
+                className="summary"
+              >
+                Getting Started
+              </summary>
+              <p
+                className="details__paragraph text_size_small"
+              >
+                <a
+                  className="link"
+                  href="/blog/a1#a1"
+                  onClick={[Function]}
+                >
+                  Creating This Website
+                </a>
+              </p>
+              <p
+                className="details__paragraph text_size_small"
+              >
+                <a
+                  className="link"
+                  href="/blog/a2#a2"
+                  onClick={[Function]}
+                >
+                  Creating This Website - More Technical
+                </a>
+              </p>
+              <p
+                className="details__paragraph text_size_small"
+              >
+                <a
+                  className="link"
+                  href="/blog/a3#a3"
+                  onClick={[Function]}
+                >
+                  Creating This Website - Finishing Phase 1
+                </a>
+              </p>
+            </details>
+            <details
+              className="details"
+            >
+              <summary
+                className="summary"
+              >
+                So I Chose React
+              </summary>
+              <p
+                className="details__paragraph text_size_small"
+              >
+                <a
+                  className="link"
+                  href="/blog/a4#a4"
+                  onClick={[Function]}
+                >
+                  What Does It Mean To Choose React
+                </a>
+              </p>
+              <p
+                className="details__paragraph text_size_small"
+              >
+                <a
+                  className="link"
+                  href="/blog/a5#a5"
+                  onClick={[Function]}
+                >
+                  Setting Up Our Development Environment - Babel & Webpack
+                </a>
+              </p>
+              <p
+                className="details__paragraph text_size_small"
+              >
+                <a
+                  className="link"
+                  href="/blog/a6#a6"
+                  onClick={[Function]}
+                >
+                  Setting Up Our Development Environment - Enhanced
+                </a>
+              </p>
+            </details>
+          </div>
+          <div
+            className="promo"
+          >
+            <a
+              className="link mdn-promo"
+              href="https://developer.mozilla.org/en-US/"
+            >
+              <img
+                alt="mdn"
+                className="mdn-banner"
+                src="test-file-stub"
+              />
+            </a>
+            <hr
+              className="hr"
+            />
+            <a
+              className="link w3c-promo"
+              href="https://www.w3.org/"
+            >
+              <img
+                alt="w3c"
+                className="w3c-banner"
+                src="test-file-stub"
+              />
+            </a>
+          </div>
+        </aside>
+        <footer
+          className="footer flex-item"
+        >
+          <div
+            className="logo footer__logo"
+          >
+            <img
+              alt="nathan m weller"
+              className="logo__image"
+              height="200"
+              src="test-file-stub"
+              width="200"
+            />
+            <p
+              className="logo__description"
+            >
+              husband, father, software architect, web developer, cook, photographer, fútbol player, gamer
+            </p>
+          </div>
+        </footer>
+      </article>
+    </div>
+  </main>,
+]
 `;
