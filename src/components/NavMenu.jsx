@@ -6,7 +6,7 @@ const NavMenu = () => (
 		<ul>
 			<NavLink displayText="home" to="/" />
 			<NavLink displayText="fed" to="/fed" />
-			<NavLink displayText="blog" to="/blog/a1" />
+			<NavLink displayText="blog" to="https://www.blog.nathanmweller.com" isExternal/>
 			<NavLink displayText="about" to="/about" />
 		</ul>
 	</nav>
