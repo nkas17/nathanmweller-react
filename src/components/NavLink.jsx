@@ -4,16 +4,15 @@ import { Link } from 'react-router-dom';
 
 const NavLink = ({ displayText, to, isExternal }) => (
 	<li className="nav__item">
-	{isExternal &&
-		<a className="link nav__link" href={to}>{displayText}</a>
-	||
-	<Link
-			className="link nav__link"
-			to={to}
-		>
-			{displayText}
-		</Link>
-	}
+		{(isExternal && (
+			<a className="link nav__link" href={to}>
+				{displayText}
+			</a>
+		)) || (
+			<Link className="link nav__link" to={to}>
+				{displayText}
+			</Link>
+		)}
 	</li>
 );
 

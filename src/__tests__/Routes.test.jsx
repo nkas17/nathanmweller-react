@@ -1,10 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Main from '../Main';
+import Routes from '../Routes';
 
 it('renders correctly', () => {
-	const tree = renderer.create(
-		<Main />,
-	).toJSON();
+	const tree = renderer.create(<Routes />).toJSON();
 	expect(tree).toMatchSnapshot();
 });

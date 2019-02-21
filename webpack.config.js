@@ -6,34 +6,25 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
 	mode: 'development',
 	resolve: {
-		modules: [
-			'node_modules',
-		],
+		modules: ['node_modules'],
 		extensions: ['.js', '.jsx', '.json', '.css', '.scss'],
 	},
-	entry: [
-		'./index.jsx',
-	],
-	output: {
-	},
+	entry: ['./index.jsx'],
+	output: {},
 	context: resolve(__dirname, 'src'),
 	devtool: 'inline-source-map',
 	devServer: {
 		hot: true,
 		contentBase: resolve(__dirname, './dist'),
 		historyApiFallback: {
-			rewrites: [
-				{ to: '/index.html' },
-			],
+			rewrites: [{ to: '/index.html' }],
 		},
 	},
 	module: {
 		rules: [
 			{
 				test: /\.jsx?/,
-				use: [
-					'babel-loader',
-				],
+				use: ['babel-loader'],
 				include: /src/,
 			},
 			// {

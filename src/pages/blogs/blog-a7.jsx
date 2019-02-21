@@ -3,8 +3,6 @@ import BlogParagraph from '../../components/BlogParagraph';
 
 export default () => (
 	<div>
-		<BlogParagraph>
-			{`Article 7 here soon`}
-		</BlogParagraph>
+		<BlogParagraph>Article 7 here soon</BlogParagraph>
 	</div>
 );

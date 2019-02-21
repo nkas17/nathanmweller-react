@@ -5,11 +5,11 @@ import FedPage from './pages/FedPage';
 import BlogPage from './pages/BlogPage';
 import AboutPage from './pages/AboutPage';
 
-
 /**
- * Main component that wraps everything else
+ * Main component that holds all routes
  */
-class Main extends React.Component { // eslint-disable-line react/prefer-stateless-function
+/* eslint-disable-next-line react/prefer-stateless-function */
+class Routes extends React.Component {
 	render() {
 		return (
 			<HashRouter>
@@ -24,4 +24,4 @@ class Main extends React.Component { // eslint-disable-line react/prefer-statele
 	}
 }
 
-export default Main;
+export default Routes;

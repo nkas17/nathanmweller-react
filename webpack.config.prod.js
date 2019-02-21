@@ -6,15 +6,11 @@ const webpack = require('webpack');
 module.exports = {
 	mode: 'production',
 	resolve: {
-		modules: [
-			'node_modules',
-		],
+		modules: ['node_modules'],
 		extensions: ['.js', '.jsx', '.json', '.css', '.scss'],
 	},
 
-	entry: [
-		'./index.jsx',
-	],
+	entry: ['./index.jsx'],
 
 	output: {
 		path: resolve(__dirname, 'dist'),
@@ -26,9 +22,7 @@ module.exports = {
 		rules: [
 			{
 				test: /\.jsx?/,
-				use: [
-					'babel-loader',
-				],
+				use: ['babel-loader'],
 				include: /src/,
 			},
 			{
@@ -80,8 +74,8 @@ module.exports = {
 			// {output}/dist/file.txt
 			{ from: 'index.html' },
 
-		// 	// Copy directory contents to {output}/to/directory/
-		// 	{ from: 'assets', to: 'assets' },
+			// 	// Copy directory contents to {output}/to/directory/
+			// 	{ from: 'assets', to: 'assets' },
 		]),
 		new webpack.LoaderOptionsPlugin({
 			minimize: true,

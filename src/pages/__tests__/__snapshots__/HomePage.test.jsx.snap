@@ -137,8 +137,7 @@ exports[`renders correctly 1`] = `
       >
         <a
           className="link nav__link"
-          href="/blog/a1"
-          onClick={[Function]}
+          href="https://www.blog.nathanmweller.com"
         >
           blog
         </a>

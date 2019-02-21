@@ -12,8 +12,8 @@ const Footer = () => (
 				alt="nathan m weller"
 			/>
 			<p className="logo__description">
-				husband,&nbsp;father, software&nbsp;architect, web&nbsp;developer,
-				cook, photographer, fútbol player, gamer
+				husband,&nbsp;father, software&nbsp;architect, web&nbsp;developer, cook,
+				photographer, fútbol player, gamer
 			</p>
 		</div>
 	</footer>

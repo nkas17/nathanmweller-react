@@ -1,6 +1,5 @@
 export default {
-	categories:
-	[
+	categories: [
 		{
 			id: 'c1',
 			title: 'Getting Started',

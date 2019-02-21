@@ -8,9 +8,13 @@ const Header = ({ alwaysShow }) => (
 	<header className="page-header flex-wrapper">
 		<div className="personal-info page-header__flex-item flex-item">
 			<h1 className="page-header__title">nathan m weller</h1>
-			<p className={`page-header__description${alwaysShow ? ' page-header__description--show' : ''}`}>
-				husband, father, software architect, web developer,
-				cook, photographer, fútbol player, gamer
+			<p
+				className={`page-header__description${
+					alwaysShow ? ' page-header__description--show' : ''
+				}`}
+			>
+				husband, father, software architect, web developer, cook, photographer,
+				fútbol player, gamer
 			</p>
 			<ContactInfo />
 		</div>

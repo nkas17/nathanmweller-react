@@ -5,7 +5,11 @@ import BlogParagraph from '../../components/BlogParagraph';
 export default () => (
 	<div>
 		<BlogParagraph>
-			{`The previous `}<Link className="link" to="/blog/a1">Creating This Website</Link> {`article was my first blog and I feel it went pretty
+			{`The previous `}
+			<Link className="link" to="/blog/a1">
+				Creating This Website
+			</Link>{' '}
+			{`article was my first blog and I feel it went pretty
 			well. I think the primary take away is that a blog is really just writing an article/journal entry. Neither of which
 			I have any formal training or education in. Other than a writing 101 course in college 15 years ago. I didn't exactly
 			follow the rough outline that I laid out in that article. Primarily I left out most of the technical details. So,
@@ -13,44 +17,73 @@ export default () => (
 		</BlogParagraph>
 		<BlogParagraph>
 			{`First off, what is front-end development? Here is the definition from `}
-			<a className="link" href="https://en.wikipedia.org/wiki/Front-end_web_development">wikipedia.org</a>
+			<a
+				className="link"
+				href="https://en.wikipedia.org/wiki/Front-end_web_development"
+			>
+				wikipedia.org
+			</a>
 			{` that sums it up well:`}
 		</BlogParagraph>
-		<blockquote className="article__blockquote" cite="https://en.wikipedia.org/wiki/Front-end_web_development">
+		<blockquote
+			className="article__blockquote"
+			cite="https://en.wikipedia.org/wiki/Front-end_web_development"
+		>
 			{`Front-end web development is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that
 			a user can see and interact with them directly.`}
 		</blockquote>
 		<BlogParagraph>
 			{`Another great quote from `}
-			<a className="link" href="https://en.wikipedia.org/wiki/Front-end_web_development">wikipedia.org</a>
+			<a
+				className="link"
+				href="https://en.wikipedia.org/wiki/Front-end_web_development"
+			>
+				wikipedia.org
+			</a>
 			{` which is so true:`}
 		</BlogParagraph>
-		<blockquote className="article__blockquote" cite="https://en.wikipedia.org/wiki/Front-end_web_development">
+		<blockquote
+			className="article__blockquote"
+			cite="https://en.wikipedia.org/wiki/Front-end_web_development"
+		>
 			{`The challenge associated with front-end development is that the tools and techniques used to create the front end of a website
 			change constantly and so the developer needs to constantly be aware of how the field is developing.`}
 		</blockquote>
 		<BlogParagraph>
 			{`You quickly realize this is so very true as soon as you begin your adventure into front-end development. A key lesson to
-			learn very early is to `}<em className="emphasis">never</em>{` stop learning. Here are the sights I have used to learn:`}
+			learn very early is to `}
+			<em className="emphasis">never</em>
+			{` stop learning. Here are the sights I have used to learn:`}
 		</BlogParagraph>
 		<ul className="list list-style-square">
 			<li>
-				<a className="link" href="https://developer.mozilla.org/en-US/">developer.mozilla.org</a>
+				<a className="link" href="https://developer.mozilla.org/en-US/">
+					developer.mozilla.org
+				</a>
 			</li>
 			<li>
-				<a className="link" href="https://www.pluralsight.com/">pluralsight.com</a>
+				<a className="link" href="https://www.pluralsight.com/">
+					pluralsight.com
+				</a>
 			</li>
 			<li>
-				<a className="link" href="https://www.codeschool.com/">codeschool.com</a>
+				<a className="link" href="https://www.codeschool.com/">
+					codeschool.com
+				</a>
 			</li>
 			<li>
-				<a className="link" href="https://egghead.io/">egghead.io</a>
+				<a className="link" href="https://egghead.io/">
+					egghead.io
+				</a>
 			</li>
 		</ul>
 		<BlogParagraph>
 			{`For this particular site I started with the basic building blocks of a webpage, html and css. No JavaScript has been written
 			for this site as of today. Actually, this is my third personal site that I've created. My first is no longer around.
-			I wrote back in the early 2000's, although I probably could find the code. My `}<a className="link" href="../about/index1.html">second site</a>
+			I wrote back in the early 2000's, although I probably could find the code. My `}
+			<a className="link" href="../about/index1.html">
+				second site
+			</a>
 			{` is still around and this one I also built with only html and css. I was going to add some JavaScript but never did.`}
 		</BlogParagraph>
 		<BlogParagraph>

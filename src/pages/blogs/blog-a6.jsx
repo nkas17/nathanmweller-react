@@ -9,24 +9,40 @@ export default () => (
 		</BlogParagraph>
 		<ul className="list list-style-square">
 			<li>
-				<a className="link" href="https://webpack.js.org/concepts/hot-module-replacement/">Hot Module Replacement</a>
+				<a
+					className="link"
+					href="https://webpack.js.org/concepts/hot-module-replacement/"
+				>
+					Hot Module Replacement
+				</a>
 				{` with webpack-dev-server`}
 			</li>
 			<li>
 				Use
-				<a className="link" href="https://yarnpkg.com/en/docs/package-json#toc-tasks">Yarn</a> scripts in our package.json file
+				<a
+					className="link"
+					href="https://yarnpkg.com/en/docs/package-json#toc-tasks"
+				>
+					Yarn
+				</a>{' '}
+				scripts in our package.json file
 			</li>
 			<li>
 				{`Static analysis with `}
-				<a className="link" href="https://eslint.org/">ESLint</a>
+				<a className="link" href="https://eslint.org/">
+					ESLint
+				</a>
 			</li>
 			<li>
 				{`Automated testing with `}
-				<a className="link" href="https://facebook.github.io/jest/">Jest</a>
+				<a className="link" href="https://facebook.github.io/jest/">
+					Jest
+				</a>
 			</li>
 		</ul>
 		<BlogParagraph>
-			<span className="font_weight_bold">Hot Module Replacement with webpack-dev-server
+			<span className="font_weight_bold">
+				Hot Module Replacement with webpack-dev-server
 			</span>
 		</BlogParagraph>
 		<BlogParagraph>
@@ -34,7 +50,8 @@ export default () => (
 			First we need to add that package so like the others type this in the terminal:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   $ yarn add --dev webpack-dev-server
 
   $ npm install --dev-save webpack-dev-server
@@ -47,7 +64,8 @@ export default () => (
 			resolve section and output section:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   devServer: {
     contentBase: './dist',
     hot: true,
@@ -60,7 +78,8 @@ export default () => (
 			{`Next add this in the plugins section after the CopyWebpackPlugin:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   new webpack.HotModuleReplacementPlugin(),
 
 `}
@@ -71,7 +90,8 @@ export default () => (
 			like the following:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   const webpack = require('webpack');
   const path = require('path');
   const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -115,7 +135,8 @@ export default () => (
 			{`Test that hot-reloading works by starting your dev-server like so:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   $ ./node_modules/.bin/webpack-dev-server
 
 `}
@@ -123,7 +144,9 @@ export default () => (
 		</pre>
 		<BlogParagraph>
 			{`Then open your browser and navigate to `}
-			<a className="link" href="http://localhost:8080">http://localhost:8080</a>
+			<a className="link" href="http://localhost:8080">
+				http://localhost:8080
+			</a>
 			{` then modify your App.jsx and you will see the update without refreshing the browser.`}
 		</BlogParagraph>
 		<BlogParagraph>
@@ -139,7 +162,8 @@ export default () => (
 			{`ESLint can also be configured with custom rules. There are a couple eslint extensions that others have built that I also highly recommend:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   $ yarn add --dev eslint
 
   $ npm install --dev-save eslint
@@ -151,7 +175,8 @@ export default () => (
 			{`After adding to your project you should setup a config file:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   $ ./node_modules/.bin/eslint --init
 
 `}
@@ -162,7 +187,8 @@ export default () => (
 			install other extensions, here are my preferences:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code text_size_small">{`
+			<code className="code text_size_small">
+				{`
   ? How would you like to configure ESLint? Use a popular style guide
   ? Which style guide do you want to follow? Airbnb
   ? Do you use React? Yes
@@ -181,17 +207,17 @@ export default () => (
 			Then you can run against your code like this:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   $ ./node_modules/.bin/eslint yourfile.js
 
 `}
 			</code>
 		</pre>
-		<BlogParagraph>
-			{`Or against an entire directory`}
-		</BlogParagraph>
+		<BlogParagraph>Or against an entire directory</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   $ ./node_modules/.bin/eslint ./src --ext jsx
 
 `}
@@ -203,7 +229,8 @@ export default () => (
 			(assuming you have errors/warnings):`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code text_size_small">{`
+			<code className="code text_size_small">
+				{`
   /projects/react-starter/src/index.jsx
     3:17  error  Unexpected use of file extension "jsx" for "./App.jsx"  import/extensions
     6:1   error  Expected indentation of 2 spaces but found 1 tab        indent
@@ -233,7 +260,8 @@ export default () => (
 		</BlogParagraph>
 
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   {
     "env": {
       "browser": true,
@@ -271,7 +299,8 @@ export default () => (
 			First like always we need to add jest and react-test-renderer to our project:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   $ yarn add --dev jest react-test-renderer
 
   $ npm install --dev-save jest react-test-renderer
@@ -285,17 +314,17 @@ export default () => (
 			So with that let's create our first test.`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   touch ./src/App.test.jsx
 
 `}
 			</code>
 		</pre>
-		<BlogParagraph>
-			{`Then in this file add this code:`}
-		</BlogParagraph>
+		<BlogParagraph>Then in this file add this code:</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   import React from 'react';
   import renderer from 'react-test-renderer';
   import App from './App';
@@ -310,21 +339,19 @@ export default () => (
 `}
 			</code>
 		</pre>
-		<BlogParagraph>
-			{`Then you can run the test:`}
-		</BlogParagraph>
+		<BlogParagraph>Then you can run the test:</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   ./node_modules/.bin/jest
 
 `}
 			</code>
 		</pre>
-		<BlogParagraph>
-			{`You should receive the following output:`}
-		</BlogParagraph>
+		<BlogParagraph>You should receive the following output:</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   $ jest
     PASS  src/App.test.js
      ✓ renders correctly (11ms)
@@ -350,19 +377,19 @@ export default () => (
 			Enzyme is a testing suite create by Airbnb that gives you the ability to interact and test these interactions with your components as if you are a user all without running your code in a browser.
 			Very powerful way to automate tests.`}
 		</BlogParagraph>
-		<BlogParagraph>
-			{`That's a basic intro to Jest!`}
-		</BlogParagraph>
+		<BlogParagraph>That's a basic intro to Jest!</BlogParagraph>
 		<BlogParagraph>
 			<span className="font_weight_bold">Scripts in our package.json file</span>
 		</BlogParagraph>
-		<BlogParagraph>{`
+		<BlogParagraph>
+			{`
 			Next let's setup some scripts to make starting our dev-server quicker and easier.
 			Also we will add a couple scripts to build a test version and a production version.
 			In the package.json file we need to add a script section:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server",
     "build": "webpack -p",
@@ -386,7 +413,8 @@ export default () => (
 			{`Notice the output size of the bundle.js here is the production build:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   Hash: 0b9352b23aa00b3385ca
   Version: webpack 3.6.0
   Time: 1409ms
@@ -404,7 +432,8 @@ export default () => (
 			{`And here is the output from the test build:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   Hash: 57aaae147946165e8e77
   Version: webpack 3.6.0
   Time: 940ms
@@ -426,7 +455,10 @@ export default () => (
 			{`• "jest" - run our tests`}
 		</BlogParagraph>
 		<BlogParagraph>
-			{`Add that's it! You made it - you can see the final source I have at`} <a className="link" href="https://github.com/nkas17/react-starter">https://github.com/nkas17/react-starter</a>
+			{`Add that's it! You made it - you can see the final source I have at`}{' '}
+			<a className="link" href="https://github.com/nkas17/react-starter">
+				https://github.com/nkas17/react-starter
+			</a>
 		</BlogParagraph>
 	</div>
 );

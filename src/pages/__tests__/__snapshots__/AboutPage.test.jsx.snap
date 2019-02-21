@@ -138,8 +138,7 @@ Array [
         >
           <a
             className="link nav__link"
-            href="/blog/a1"
-            onClick={[Function]}
+            href="https://www.blog.nathanmweller.com"
           >
             blog
           </a>
@@ -261,7 +260,7 @@ Array [
           >
             <a
               className="link"
-              href="http://games.nathanmweller.com"
+              href="https://www.games.nathanmweller.com"
             >
               games
             </a>
@@ -274,7 +273,7 @@ Array [
           >
             <a
               className="link"
-              href="https://recipes.nathanmweller.com"
+              href="https://www.recipes.nathanmweller.com"
             >
               recipes
             </a>
@@ -284,7 +283,7 @@ Array [
           >
             <a
               className="link"
-              href="https://local-weather.nathanmweller.com"
+              href="https://www.local-weather.nathanmweller.com"
             >
               local weather
             </a>
@@ -294,7 +293,7 @@ Array [
           >
             <a
               className="link"
-              href="http://random-quote.nathanmweller.com"
+              href="https://www.random-quote.nathanmweller.com"
             >
               random quote
             </a>

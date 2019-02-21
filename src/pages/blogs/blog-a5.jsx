@@ -5,19 +5,36 @@ export default () => (
 	<div>
 		<BlogParagraph>
 			{`The Facebook team has made many improvements to getting up and running quickly with React using `}
-			<a className="link" href="https://reactjs.org/docs/installation.html#creating-a-new-application">create-react-app</a>
+			<a
+				className="link"
+				href="https://reactjs.org/docs/installation.html#creating-a-new-application"
+			>
+				create-react-app
+			</a>
 			{`. There
 			is also a lot going on under the hood of the app that gets created using `}
-			<a className="link" href="https://reactjs.org/docs/installation.html#creating-a-new-application">create-react-app</a>
+			<a
+				className="link"
+				href="https://reactjs.org/docs/installation.html#creating-a-new-application"
+			>
+				create-react-app
+			</a>
 			{`. So, even though that
 			is the quickest and simplest way to get started I feel it is more difficult in the long run when you want to start
 			customizing the development process and the build process. So, instead of going through `}
-			<a className="link" href="https://reactjs.org/docs/installation.html#creating-a-new-application">create-react-app</a>
+			<a
+				className="link"
+				href="https://reactjs.org/docs/installation.html#creating-a-new-application"
+			>
+				create-react-app
+			</a>
 			{` I'll first go over a simple basic react setup with webpack and babel and explain why you would also need
 			these tools (the "create-react-app" also uses these under the hood).`}
 		</BlogParagraph>
 		<BlogParagraph>
-			<span className="font_weight_bold">Let&apos;s dive right in from scratch</span>
+			<span className="font_weight_bold">
+				Let&apos;s dive right in from scratch
+			</span>
 		</BlogParagraph>
 		<BlogParagraph>
 			{`First, create a directory and initialize it with yarn or npm.
@@ -47,9 +64,7 @@ export default () => (
 			the defacto standard name of this "deployable artifact". It can also generate other static assets as well. It also
 			supports "loaders" and is extremely configurable.`}
 		</BlogParagraph>
-		<BlogParagraph>
-			{`Again using yarn let's add webpack`}
-		</BlogParagraph>
+		<BlogParagraph>Again using yarn let's add webpack</BlogParagraph>
 		<pre className="pre">
 			<code className="code">
 				{`
@@ -73,9 +88,7 @@ export default () => (
 `}
 			</code>
 		</pre>
-		<BlogParagraph>
-			Update the config file with the following:
-		</BlogParagraph>
+		<BlogParagraph>Update the config file with the following:</BlogParagraph>
 		<pre className="pre">
 			<code className="code">
 				{`
@@ -94,7 +107,8 @@ export default () => (
 `}
 			</code>
 		</pre>
-		<BlogParagraph>{`This is the least required in the config file, 
+		<BlogParagraph>
+			{`This is the least required in the config file, 
 			it simple needs an entry point and on output location. The entry holds 
 			the React application code base and the output is the directory where 
 			the built bundle.js file will be placed.`}
@@ -152,11 +166,10 @@ export default () => (
 `}
 			</code>
 		</pre>
-		<BlogParagraph>
-			{`And add the following:`}
-		</BlogParagraph>
+		<BlogParagraph>And add the following:</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   console.log('I just created an App with Webpack!');
 
 `}
@@ -186,11 +199,10 @@ export default () => (
 `}
 			</code>
 		</pre>
-		<BlogParagraph>
-			{`Now type this command in the terminal:`}
-		</BlogParagraph>
+		<BlogParagraph>Now type this command in the terminal:</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   $ ./node_modules/.bin/webpack -d
 
 `}
@@ -205,7 +217,8 @@ export default () => (
 			 You will see what we logged out:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   I just created an App with Webpack!
 
 `}
@@ -222,7 +235,8 @@ export default () => (
 			the ES20XX code to what browsers support. Let's add the babel packages that are required to make this happen:`}
 		</BlogParagraph>
 		<code className="code">
-			<pre className="pre">{`
+			<pre className="pre">
+				{`
   $ yarn add --dev babel-core
   $ yarn add --dev babel-loader
   $ yarn add --dev babel-preset-env
@@ -242,17 +256,17 @@ export default () => (
 			code. We need a little configuration for babel as well:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   $ touch .babelrc
 
 `}
 			</code>
 		</pre>
-		<BlogParagraph>
-			{`Then add this to the file:`}
-		</BlogParagraph>
+		<BlogParagraph>Then add this to the file:</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   {
     "presets": [
     "env",
@@ -269,7 +283,8 @@ export default () => (
 			the config object:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   module: {
     loaders: [
       {
@@ -293,17 +308,15 @@ export default () => (
 		</BlogParagraph>
 		<pre className="pre">
 			<code className="code">
-				$ yarn add react react-dom
-
-				$ npm install --save react react-dom
-
+				$ yarn add react react-dom $ npm install --save react react-dom
 			</code>
 		</pre>
 		<BlogParagraph>
 			{`Now replace the existing console.log statement in index.jsx with the following:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   import React from 'react';
   import ReactDOM from 'react-dom';
 
@@ -327,10 +340,7 @@ export default () => (
 			{`Then save and run the webpack command again:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">
-				$ ./node_modules/.bin/webpack -d
-
-			</code>
+			<code className="code">$ ./node_modules/.bin/webpack -d</code>
 		</pre>
 		<BlogParagraph>
 			{`Now reload the index.html file and you should see the 
@@ -338,17 +348,15 @@ export default () => (
 			`
 		</BlogParagraph>
 		<pre className="pre pre--white">
-			<code className="code">
-				Hello React!
-
-			</code>
+			<code className="code">Hello React!</code>
 		</pre>
 		<BlogParagraph>
 			{`You can also split out the App class code to a separate file App.jsx like
 			this(which you'll want for when we add a Jest test:`}
 		</BlogParagraph>
 		<code className="code">
-			<pre className="pre">{`
+			<pre className="pre">
+				{`
   import React from 'react';
 
   export default class App extends React.Component {
@@ -362,11 +370,10 @@ export default () => (
 `}
 			</pre>
 		</code>
-		<BlogParagraph>
-			{`Which then leaves only this in index.jsx`}
-		</BlogParagraph>
+		<BlogParagraph>Which then leaves only this in index.jsx</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   import React from 'react';/n
   import ReactDOM from 'react-dom';/n
   import App from './App';/n
@@ -385,7 +392,8 @@ export default () => (
 			future, add it to the top right above output:`}
 		</BlogParagraph>
 		<pre className="pre">
-			<code className="code">{`
+			<code className="code">
+				{`
   resolve: {
     extensions: ['.js', '.jsx', '.json', '.css', '.scss'],
   },

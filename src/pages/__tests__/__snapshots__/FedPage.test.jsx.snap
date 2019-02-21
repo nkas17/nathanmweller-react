@@ -138,8 +138,7 @@ Array [
         >
           <a
             className="link nav__link"
-            href="/blog/a1"
-            onClick={[Function]}
+            href="https://www.blog.nathanmweller.com"
           >
             blog
           </a>
@@ -207,14 +206,16 @@ Array [
           <p
             className="article__paragraph"
           >
-            MDN - 
+            MDN -
+             
             <a
               className="link"
               href="https://developer.mozilla.org/en-US/"
             >
               Mozilla Developer Network
             </a>
-             is a fantastic resource for learning about the front-end -
+             
+            is a fantastic resource for learning about the front-end -
           </p>
           <a
             className="link div-link"
@@ -237,7 +238,8 @@ Array [
             >
               Front-end-handbook
             </a>
-             is another great resource from frontendmasters -
+             
+            is another great resource from frontendmasters -
           </p>
           <a
             className="link div-link"
@@ -261,7 +263,8 @@ Array [
             >
               how it feels
             </a>
-             is a great article illustrating this.
+             
+            is a great article illustrating this.
           </p>
           <a
             className="link div-link"
@@ -285,7 +288,8 @@ Array [
             >
               Image Compression for Web Developers
             </a>
-                   can help us decide how to save our users money.
+             
+            can help us decide how to save our users money.
           </p>
           <a
             className="link div-link"
