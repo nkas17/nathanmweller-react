@@ -24,14 +24,6 @@ const ContactInfo = () => (
 			</a>
 		</li>
 		<li className="contact-info__item">
-			<a
-				className="link"
-				href="https://plus.google.com/u/0/100022763393186980494/posts/p/pub"
-			>
-				<i className="fa fa-google-plus" />
-			</a>
-		</li>
-		<li className="contact-info__item">
 			<a className="link" href="https://www.facebook.com/nathan.weller.9">
 				<i className="fa fa-facebook" />
 			</a>
