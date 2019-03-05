@@ -16,6 +16,10 @@ const NavLink = ({ displayText, to, isExternal }) => (
 	</li>
 );
 
+NavLink.defaultProps = {
+	isExternal: false,
+};
+
 NavLink.propTypes = {
 	// text to display for the link
 	displayText: PropTypes.string.isRequired,
