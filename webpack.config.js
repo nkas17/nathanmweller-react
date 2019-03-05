@@ -27,6 +27,11 @@ module.exports = {
 				use: ['babel-loader'],
 				include: /src/,
 			},
+			{
+				test: /\.jsx?$/,
+				include: /node_modules/,
+				use: ['react-hot-loader/webpack'],
+			},
 			// {
 			// 	test: /\.css$/,
 			// 	use: [
