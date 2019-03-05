@@ -27,6 +27,7 @@ module.exports = {
 			"tab",
 		],
 		"react/jsx-one-expression-per-line": "off",
+		"react/no-unescaped-entities": "off",
 		"no-tabs": "off",
 		quotes: [
 			"error",

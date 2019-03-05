@@ -45,7 +45,7 @@ const AboutPage = () => [
 						<a className="link" href="https://www.games.nathanmweller.com">
 							games
 						</a>
-						, who {`"doesn't"`} love games
+						, who doesn't love games
 					</p>
 					<p className="article__paragraph">
 						<a className="link" href="https://www.recipes.nathanmweller.com">

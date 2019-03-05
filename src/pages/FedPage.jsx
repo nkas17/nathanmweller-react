@@ -58,9 +58,8 @@ const FedPage = () => [
 						</div>
 					</a>
 					<p className="article__paragraph">
-						{
-							'Why is today\'s front-end development so complex, it used to be so easy, just some html, a little jQuery and some css...'
-						}
+						Why is today's front-end development so complex, it used to be so
+						easy, just some html, a little jQuery and some css...
 						<a
 							className="link"
 							href="https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f"
