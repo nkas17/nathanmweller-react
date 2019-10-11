@@ -14,7 +14,7 @@
 		"lint": "./node_modules/.bin/eslint --ext .jsx --ext .js src webpack.config.*",
 		"lint:report": "./node_modules/.bin/eslint --ext .jsx --ext .js src --output-file ./report/eslint-report.html --format html",
 		"test": "jest",
-		"pre-push": "yarn run lint && yarn run test"
+		"pre-push": "yarn run lint && yarn run test && yarn run build"
 	},
 	"devDependencies": {
 		"@babel/core": "7.6.4",
