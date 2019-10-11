@@ -4,7 +4,8 @@ import BlogParagraph from '../../components/BlogParagraph';
 export default () => (
 	<div>
 		<BlogParagraph>
-			{`The Facebook team has made many improvements to getting up and running quickly with React using `}
+			The Facebook team has made many improvements to getting up and running
+			quickly with React using
 			<a
 				className="link"
 				href="https://reactjs.org/docs/installation.html#creating-a-new-application"
@@ -54,7 +55,7 @@ export default () => (
 			</code>
 		</pre>
 		<BlogParagraph>
-			{`Accept the defaults from the init command or enter what you'd like.`}
+			Accept the defaults from the init command or enter what you'd like.
 		</BlogParagraph>
 		<BlogParagraph>
 			<span className="font_weight_bold">Webpack - install and configure</span>
@@ -128,7 +129,8 @@ export default () => (
 			</code>
 		</pre>
 		<BlogParagraph>
-			{`Then we need to import that in, at the top of your webpack.config.js file add this:`}
+			Then we need to import that in, at the top of your webpack.config.js file
+			add this:
 		</BlogParagraph>
 		<pre className="pre">
 			<code className="code">
@@ -139,7 +141,7 @@ export default () => (
 			</code>
 		</pre>
 		<BlogParagraph>
-			{`Then in the config object add the following after the output property:`}
+			Then in the config object add the following after the output property:
 		</BlogParagraph>
 		<pre className="pre">
 			<code className="code">
@@ -312,7 +314,8 @@ export default () => (
 			</code>
 		</pre>
 		<BlogParagraph>
-			{`Now replace the existing console.log statement in index.jsx with the following:`}
+			Now replace the existing console.log statement in index.jsx with the
+			following:
 		</BlogParagraph>
 		<pre className="pre">
 			<code className="code">
@@ -336,9 +339,7 @@ export default () => (
 `}
 			</code>
 		</pre>
-		<BlogParagraph>
-			{`Then save and run the webpack command again:`}
-		</BlogParagraph>
+		<BlogParagraph>Then save and run the webpack command again:</BlogParagraph>
 		<pre className="pre">
 			<code className="code">$ ./node_modules/.bin/webpack -d</code>
 		</pre>

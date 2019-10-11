@@ -23,11 +23,13 @@ const BlogPage = () => [
 					<Route
 						exact
 						path="/blog"
-						render={props => <BlogLanding {...props} blogIndex={blogIndex} />}
+						render={() => <BlogLanding blogIndex={blogIndex} />}
 					/>
 					<Route
 						path="/blog/:articleId"
-						render={props => <BlogArticle {...props} blogIndex={blogIndex} />}
+						render={props => (
+							<BlogArticle match={props.match} blogIndex={blogIndex} />
+						)}
 					/>
 				</div>
 				<SideBar additionalClass="aside-blog">

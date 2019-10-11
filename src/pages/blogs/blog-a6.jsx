@@ -15,7 +15,7 @@ export default () => (
 				>
 					Hot Module Replacement
 				</a>
-				{` with webpack-dev-server`}
+				with webpack-dev-server
 			</li>
 			<li>
 				Use
@@ -28,13 +28,13 @@ export default () => (
 				scripts in our package.json file
 			</li>
 			<li>
-				{`Static analysis with `}
+				Static analysis with
 				<a className="link" href="https://eslint.org/">
 					ESLint
 				</a>
 			</li>
 			<li>
-				{`Automated testing with `}
+				Automated testing with
 				<a className="link" href="https://facebook.github.io/jest/">
 					Jest
 				</a>
@@ -75,7 +75,7 @@ export default () => (
 			</code>
 		</pre>
 		<BlogParagraph>
-			{`Next add this in the plugins section after the CopyWebpackPlugin:`}
+			Next add this in the plugins section after the CopyWebpackPlugin:
 		</BlogParagraph>
 		<pre className="pre">
 			<code className="code">
@@ -132,7 +132,7 @@ export default () => (
 			</code>
 		</pre>
 		<BlogParagraph>
-			{`Test that hot-reloading works by starting your dev-server like so:`}
+			Test that hot-reloading works by starting your dev-server like so:
 		</BlogParagraph>
 		<pre className="pre">
 			<code className="code">
@@ -143,23 +143,28 @@ export default () => (
 			</code>
 		</pre>
 		<BlogParagraph>
-			{`Then open your browser and navigate to `}
+			Then open your browser and navigate to
 			<a className="link" href="http://localhost:8080">
 				http://localhost:8080
 			</a>
-			{` then modify your App.jsx and you will see the update without refreshing the browser.`}
+			then modify your App.jsx and you will see the update without refreshing
+			the browser.
 		</BlogParagraph>
 		<BlogParagraph>
 			<span className="font_weight_bold">Adding ESLint</span>
 		</BlogParagraph>
 		<BlogParagraph>
-			{`ESLint is used to analyze our code to check for anything from code style consistency to finding common coding bugs.`}
+			ESLint is used to analyze our code to check for anything from code style
+			consistency to finding common coding bugs.
 		</BlogParagraph>
 		<blockquote className="article__blockquote">
-			{`"ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs."`}
+			"ESLint is a tool for identifying and reporting on patterns found in
+			ECMAScript/JavaScript code, with the goal of making code more consistent
+			and avoiding bugs."
 		</blockquote>
 		<BlogParagraph>
-			{`ESLint can also be configured with custom rules. There are a couple eslint extensions that others have built that I also highly recommend:`}
+			ESLint can also be configured with custom rules. There are a couple eslint
+			extensions that others have built that I also highly recommend:
 		</BlogParagraph>
 		<pre className="pre">
 			<code className="code">
@@ -172,7 +177,7 @@ export default () => (
 			</code>
 		</pre>
 		<BlogParagraph>
-			{`After adding to your project you should setup a config file:`}
+			After adding to your project you should setup a config file:
 		</BlogParagraph>
 		<pre className="pre">
 			<code className="code">
@@ -286,9 +291,7 @@ export default () => (
 		<BlogParagraph>
 			<span className="font_weight_bold">Jest</span>
 		</BlogParagraph>
-		<BlogParagraph>
-			{`Jest is used to test our React components.`}
-		</BlogParagraph>
+		<BlogParagraph>Jest is used to test our React components.</BlogParagraph>
 		<blockquote className="article__blockquote">
 			{`"Complete and easy to set-up JavaScript testing solution. Works out of the box for any React project.
 	Fast interactive watch mode runs only test files related to changed files and is optimized to give signal quickly.
@@ -402,15 +405,17 @@ export default () => (
 			</code>
 		</pre>
 		<BlogParagraph>
-			{`What are these for:`}
+			What are these for:
 			<br />
-			{`• "start" - starting your dev server for testing locally`}
+			• "start" - starting your dev server for testing locally
 			<br />
-			{`• "build" - output the artifacts required for a production release - minified code`}
+			• "build" - output the artifacts required for a production release -
+			minified code
 			<br />
-			{`• "build:test" - test version of the build is to test the build and even test your artifacts before generating the production artifacts.`}
+			• "build:test" - test version of the build is to test the build and even
+			test your artifacts before generating the production artifacts.
 			<br />
-			{`Notice the output size of the bundle.js here is the production build:`}
+			Notice the output size of the bundle.js here is the production build:
 		</BlogParagraph>
 		<pre className="pre">
 			<code className="code">
@@ -428,9 +433,7 @@ export default () => (
 `}
 			</code>
 		</pre>
-		<BlogParagraph>
-			{`And here is the output from the test build:`}
-		</BlogParagraph>
+		<BlogParagraph>And here is the output from the test build:</BlogParagraph>
 		<pre className="pre">
 			<code className="code">
 				{`
@@ -448,11 +451,12 @@ export default () => (
 			</code>
 		</pre>
 		<BlogParagraph>
-			{`You can also chose to have a separate webpack.config.js file for a production build to customize even more.`}
+			You can also chose to have a separate webpack.config.js file for a
+			production build to customize even more.
 			<br />
-			{`• "eslint" - analyze our code to check for anything from code style consistency to finding common coding bugs.`}
-			<br />
-			{`• "jest" - run our tests`}
+			• "eslint" - analyze our code to check for anything from code style
+			consistency to finding common coding bugs.
+			<br />• "jest" - run our tests
 		</BlogParagraph>
 		<BlogParagraph>
 			{`Add that's it! You made it - you can see the final source I have at`}{' '}

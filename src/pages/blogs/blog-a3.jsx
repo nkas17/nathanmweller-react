@@ -5,7 +5,8 @@ import BlogParagraph from '../../components/BlogParagraph';
 export default () => (
 	<div>
 		<BlogParagraph>
-			{`There have been a few more things I have done to wrap up phase one. First, Validating my html. `}
+			There have been a few more things I have done to wrap up phase one. First,
+			Validating my html.
 			<a className="link" href="https://validator.w3.org/">
 				W3C Markup Validation Service
 			</a>
@@ -14,8 +15,7 @@ export default () => (
 			exactly where you may have issues, you can also have it produce an image report and outline. This will assist you
 			in following W3C's intended purpose for html and the standard for which they have laid forth. You may be asking why
 			do this? `}
-			<em className="emphasis">Semantic html</em>
-			{`. Here are a couple quotes from `}
+			<em className="emphasis">Semantic html</em>. Here are a couple quotes from
 			<a
 				className="link"
 				href="http://vanseodesign.com/web-design/semantic-html/"
@@ -45,7 +45,7 @@ export default () => (
 			</dl>
 		</blockquote>
 		<BlogParagraph>
-			{`So, then the next logical question is, What is semantic html?`}
+			So, then the next logical question is, What is semantic html?
 		</BlogParagraph>
 		<blockquote
 			className="article__blockquote"
@@ -55,14 +55,14 @@ export default () => (
 			It’s about using tags, className names, and ids that reinforce the
 			meaning of the content within the tags.`}
 			<br />
-			<br /> {`Semantic html is also about using tags in the right way.`}
+			<br /> Semantic html is also about using tags in the right way.
 		</blockquote>
 		<BlogParagraph>
 			{`The article linked above goes into great detail into why semantic html
 			is important, please have a read.`}
 		</BlogParagraph>
 		<BlogParagraph>
-			{`Second, I did some `}
+			Second, I did some
 			<a
 				className="link"
 				href="https://app.pluralsight.com/library/courses/responsive-typography/table-of-contents"
@@ -86,14 +86,15 @@ export default () => (
 			all these devices and access speeds and input technologies and the operating systems and browsers themselves.`}
 		</blockquote>
 		<BlogParagraph>
-			{`Otherwise, just several other tweaks here and there to clean up the overall site.`}
+			Otherwise, just several other tweaks here and there to clean up the
+			overall site.
 		</BlogParagraph>
 		<BlogParagraph>
-			{`Next up is the `}
+			Next up is the
 			<a className="link" href="https://facebook.github.io/react/">
 				React
 			</a>
-			{` re-write. `}
+			re-write.
 			<Link className="link" to="/blog/a4">
 				What Does It Mean To Choose React
 			</Link>

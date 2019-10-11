@@ -5,7 +5,7 @@ import BlogParagraph from '../../components/BlogParagraph';
 export default () => (
 	<div>
 		<BlogParagraph>
-			{`The previous `}
+			The previous
 			<Link className="link" to="/blog/a1">
 				Creating This Website
 			</Link>{' '}
@@ -16,14 +16,14 @@ export default () => (
 			in this article I'll attempt to do just that.`}
 		</BlogParagraph>
 		<BlogParagraph>
-			{`First off, what is front-end development? Here is the definition from `}
+			First off, what is front-end development? Here is the definition from
 			<a
 				className="link"
 				href="https://en.wikipedia.org/wiki/Front-end_web_development"
 			>
 				wikipedia.org
 			</a>
-			{` that sums it up well:`}
+			that sums it up well:
 		</BlogParagraph>
 		<blockquote
 			className="article__blockquote"
@@ -33,14 +33,14 @@ export default () => (
 			a user can see and interact with them directly.`}
 		</blockquote>
 		<BlogParagraph>
-			{`Another great quote from `}
+			Another great quote from
 			<a
 				className="link"
 				href="https://en.wikipedia.org/wiki/Front-end_web_development"
 			>
 				wikipedia.org
 			</a>
-			{` which is so true:`}
+			which is so true:
 		</BlogParagraph>
 		<blockquote
 			className="article__blockquote"
@@ -53,7 +53,7 @@ export default () => (
 			{`You quickly realize this is so very true as soon as you begin your adventure into front-end development. A key lesson to
 			learn very early is to `}
 			<em className="emphasis">never</em>
-			{` stop learning. Here are the sights I have used to learn:`}
+			stop learning. Here are the sights I have used to learn:
 		</BlogParagraph>
 		<ul className="list list-style-square">
 			<li>
@@ -84,7 +84,8 @@ export default () => (
 			<a className="link" href="../about/index1.html">
 				second site
 			</a>
-			{` is still around and this one I also built with only html and css. I was going to add some JavaScript but never did.`}
+			is still around and this one I also built with only html and css. I was
+			going to add some JavaScript but never did.
 		</BlogParagraph>
 		<BlogParagraph>
 			{`Of the three foundational components of a website html is the first component and truly the only required piece. You could
