@@ -452,7 +452,7 @@ export default () => (
       </code>
     </pre>
     <BlogParagraph>
-      You can also chose to have a separate webpack.config.js file for a
+      You can also chose to have a separate webpack.config.ts file for a
       production build to customize even more.
       <br />
       • &quote;eslint&quote; - analyze our code to check for anything from code
@@ -460,7 +460,7 @@ export default () => (
       <br />• &quote;jest&quote; - run our tests
     </BlogParagraph>
     <BlogParagraph>
-      {`Add that's it! You made it - you can see the final source I have at`}{' '}
+      Add that&apso;s it! You made it - you can see the final source I have at{' '}
       <a className="link" href="https://github.com/nkas17/react-starter">
         https://github.com/nkas17/react-starter
       </a>

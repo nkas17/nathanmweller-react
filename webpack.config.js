@@ -1,19 +1,20 @@
-const webpack = require('webpack');
 const { resolve } = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 module.exports = {
   mode: 'development',
   resolve: {
     modules: ['node_modules'],
-    extensions: ['.js', '.jsx', '.json', '.css', '.scss'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.css', '.scss'],
   },
-  entry: ['./index.jsx'],
+  entry: ['./index.tsx'],
   output: {},
   context: resolve(__dirname, 'src'),
   devtool: 'inline-source-map',
   devServer: {
+    hot: true,
     historyApiFallback: {
       rewrites: [{ to: '/index.html' }],
     },
@@ -21,14 +22,15 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?/,
-        use: ['babel-loader'],
-        include: /src/,
-      },
-      {
-        test: /\.jsx?$/,
-        include: /node_modules/,
-        use: ['react-hot-loader/webpack'],
+        test: /\.(ts|js)x?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-typescript'],
+            plugins: [require.resolve('react-refresh/babel')].filter(Boolean),
+          },
+        },
       },
       {
         test: /\.css$/,
@@ -68,6 +70,6 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [{ from: 'index.html' }],
     }),
-    new webpack.HotModuleReplacementPlugin(),
+    new ReactRefreshWebpackPlugin(),
   ],
 };

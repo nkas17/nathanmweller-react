@@ -1,15 +1,15 @@
+const webpack = require('webpack');
 const { resolve } = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const webpack = require('webpack');
 
 module.exports = {
   mode: 'production',
   resolve: {
     modules: ['node_modules'],
-    extensions: ['.js', '.jsx', '.json', '.css', '.scss'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.css', '.scss'],
   },
-  entry: ['./index.jsx'],
+  entry: ['./index.tsx'],
 
   output: {
     path: resolve(__dirname, 'dist'),
@@ -20,9 +20,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?/,
-        use: ['babel-loader'],
-        include: /src/,
+        test: /\.(ts|js)x?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-typescript'],
+          },
+        },
       },
       {
         test: /\.css$/,

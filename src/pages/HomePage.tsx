@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../components/Header';
 
-const HomePage = () => <Header alwaysShow />;
+function HomePage() {
+  return <Header alwaysShow />;
+}
 
 export default HomePage;
