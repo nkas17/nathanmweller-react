@@ -1,8 +1,9 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import Routes from '../Routes';
 
 it('renders correctly', () => {
-	const tree = renderer.create(<Routes />).toJSON();
-	expect(tree).toMatchSnapshot();
+  render(<Routes />);
+  expect(screen.getByRole('heading')).toHaveTextContent('nathan m weller');
 });

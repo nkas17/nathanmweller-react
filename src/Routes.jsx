@@ -8,20 +8,17 @@ import AboutPage from './pages/AboutPage';
 /**
  * Main component that holds all routes
  */
-/* eslint-disable-next-line react/prefer-stateless-function */
-class Routes extends React.Component {
-	render() {
-		return (
-			<HashRouter>
-				<main>
-					<Route exact path="/" component={HomePage} />
-					<Route exact path="/fed" component={FedPage} />
-					<Route path="/blog" component={BlogPage} />
-					<Route exact path="/about" component={AboutPage} />
-				</main>
-			</HashRouter>
-		);
-	}
+function Routes() {
+  return (
+    <HashRouter>
+      <main>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/fed" component={FedPage} />
+        <Route path="/blog" component={BlogPage} />
+        <Route exact path="/about" component={AboutPage} />
+      </main>
+    </HashRouter>
+  );
 }
 
 export default Routes;

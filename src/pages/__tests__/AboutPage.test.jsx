@@ -4,12 +4,13 @@ import renderer from 'react-test-renderer';
 import AboutPage from '../AboutPage';
 
 it('renders correctly', () => {
-	const tree = renderer
-		.create(
-			<MemoryRouter>
-				<AboutPage />
-			</MemoryRouter>
-		)
-		.toJSON();
-	expect(tree).toMatchSnapshot();
+  const tree = renderer
+    .create(
+      <MemoryRouter>
+        <AboutPage />
+      </MemoryRouter>,
+    )
+
+    .toJSON();
+  expect(tree).toMatchSnapshot();
 });

@@ -1,0 +1,13 @@
+.idea
+__snapshots__
+.gitignore
+yarn.lock
+.prettierignore
+.eslintignore
+dist
+imgs
+fonts
+.npmrc
+.yarnclean
+.DS_Store
+font-awesome.min.css
