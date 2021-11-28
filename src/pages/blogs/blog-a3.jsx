@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import BlogParagraph from '../../components/BlogParagraph';
 
-export default () => (
+const A3 = () => (
   <div>
     <BlogParagraph>
       There have been a few more things I have done to wrap up phase one. First,
@@ -101,3 +101,5 @@ export default () => (
     </BlogParagraph>
   </div>
 );
+
+export default A3;

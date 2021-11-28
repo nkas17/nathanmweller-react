@@ -1,7 +1,7 @@
 import React from 'react';
 import BlogParagraph from '../../components/BlogParagraph';
 
-export default () => (
+const A6 = () => (
   <div>
     <BlogParagraph>
       {`Last time we got all setup with React, Babel and Webpack. Our environment was all set to start coding react components with
@@ -467,3 +467,5 @@ export default () => (
     </BlogParagraph>
   </div>
 );
+
+export default A6;

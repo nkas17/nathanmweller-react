@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import BlogParagraph from '../../components/BlogParagraph';
 
-export default () => (
+const A4 = () => (
   <div>
     <BlogParagraph>
       Jumping head first into
@@ -182,3 +182,5 @@ export default () => (
     </BlogParagraph>
   </div>
 );
+
+export default A4;

@@ -1,7 +1,7 @@
 import React from 'react';
 import BlogParagraph from '../../components/BlogParagraph';
 
-export default () => (
+const A5 = () => (
   <div>
     <BlogParagraph>
       The Facebook team has made many improvements to getting up and running
@@ -410,3 +410,5 @@ export default () => (
     </BlogParagraph>
   </div>
 );
+
+export default A5;

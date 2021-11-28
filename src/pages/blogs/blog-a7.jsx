@@ -1,8 +1,9 @@
 import React from 'react';
 import BlogParagraph from '../../components/BlogParagraph';
 
-export default () => (
+const A7 = () => (
   <div>
     <BlogParagraph>Article 7 here soon</BlogParagraph>
   </div>
 );
+export default A7;
