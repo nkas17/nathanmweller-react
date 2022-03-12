@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import BlogLanding from '../components/BlogLanding';
 import BlogArticle from '../components/BlogArticle';
 import Header from '../components/Header';
@@ -22,11 +22,10 @@ function BlogPage() {
           </header>
           <article className="article flex-wrapper">
             <div className="article__content flex-item article__flex-item">
-              <Route exact path="/blog" render={() => <BlogLanding />} />
-              <Route
-                path="/blog/:articleId"
-                render={({ match }) => <BlogArticle match={match} />}
-              />
+              <Routes>
+                <Route path=":articleId" element={<BlogArticle />} />
+                <Route path="" element={<BlogLanding />} />
+              </Routes>
             </div>
             <SideBar additionalClass="aside-blog">
               <TableOfContents contents={blogIndex} title="Previous Articles" />

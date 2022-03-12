@@ -182,7 +182,11 @@ Array [
       >
         <div
           className="article__content flex-item article__flex-item"
-        />
+        >
+          <p>
+            Landing page for the blog, soon to display first few sentences of each article to scroll through
+          </p>
+        </div>
         <aside
           className="aside aside-blog article__aside article__flex-item"
         >

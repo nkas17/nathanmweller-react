@@ -5,7 +5,7 @@ import mdn from '../imgs/MDN_promoBanner_120x240px_v2.png';
 import w3c from '../imgs/w3c.png';
 
 export interface SideBarProps {
-  children?: React.VFC | null;
+  children?: React.VFC | any;
   additionalClass?: string;
 }
 

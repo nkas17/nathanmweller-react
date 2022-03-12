@@ -2,12 +2,12 @@ import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 
 interface Article {
-  id: number;
+  id: string;
   title: string;
 }
 
 interface Category {
-  id: number;
+  id: string;
   title: string;
   articles: Article[];
 }

@@ -1,7 +1,7 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '../test-utils';
 import '@testing-library/jest-dom';
-import Routes from '../Routes';
+import Routes from '../App';
 
 it('renders correctly', () => {
   render(<Routes />);

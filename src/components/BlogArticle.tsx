@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+import { useParams } from 'react-router-dom';
 import BlogHeader from './BlogHeader';
 import A1 from '../pages/blogs/blog-a1';
 import A2 from '../pages/blogs/blog-a2';
@@ -21,64 +21,61 @@ const getArticle = (
   </>
 );
 
-function BlogArticle({ match }: any) {
+function BlogArticle() {
+  const { articleId } = useParams();
   return (
     <div className="blog-entry">
-      {match.params.articleId === 'a1' &&
+      {articleId === 'a1' &&
         getArticle(
-          match.params.articleId,
-          <A1 key={match.params.articleId} />,
+          articleId,
+          <A1 key={articleId} />,
           'Creating This Website',
           'Sept 13, 2017',
         )}
-      {match.params.articleId === 'a2' &&
+      {articleId === 'a2' &&
         getArticle(
-          match.params.articleId,
-          <A2 key={match.params.articleId} />,
+          articleId,
+          <A2 key={articleId} />,
           'Creating This Website - More Technical',
           'Sept 14, 2017',
         )}
-      {match.params.articleId === 'a3' &&
+      {articleId === 'a3' &&
         getArticle(
-          match.params.articleId,
-          <A3 key={match.params.articleId} />,
+          articleId,
+          <A3 key={articleId} />,
           'Creating This Website - Finishing Phase 1',
           'Sept 17, 2017',
         )}
-      {match.params.articleId === 'a4' &&
+      {articleId === 'a4' &&
         getArticle(
-          match.params.articleId,
-          <A4 key={match.params.articleId} />,
+          articleId,
+          <A4 key={articleId} />,
           'What Does It Mean To Choose React?',
           'Sept 20, 2017',
         )}
-      {match.params.articleId === 'a5' &&
+      {articleId === 'a5' &&
         getArticle(
-          match.params.articleId,
-          <A5 key={match.params.articleId} />,
+          articleId,
+          <A5 key={articleId} />,
           'Setting Up Our Development Environment - Babel & Webpack',
           'Sept 20, 2017',
         )}
-      {match.params.articleId === 'a6' &&
+      {articleId === 'a6' &&
         getArticle(
-          match.params.articleId,
-          <A6 key={match.params.articleId} />,
+          articleId,
+          <A6 key={articleId} />,
           'Setting Up Our Development Environment - Enhanced',
           'Sept 30, 2017',
         )}
-      {match.params.articleId === 'a7' &&
+      {articleId === 'a7' &&
         getArticle(
-          match.params.articleId,
-          <A7 key={match.params.articleId} />,
+          articleId,
+          <A7 key={articleId} />,
           'Starting the Conversion to React',
           'Oct 06, 2017',
         )}
     </div>
   );
 }
-
-BlogArticle.propTypes = {
-  match: PropTypes.objectOf(PropTypes.any).isRequired,
-};
 
 export default BlogArticle;

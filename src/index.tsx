@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 
 import './styles/font-awesome.min.css';
 import './styles/styles.css';
-import Routes from './Routes';
+import App from './App';
 
-ReactDOM.render(<Routes />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
