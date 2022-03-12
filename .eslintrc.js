@@ -10,5 +10,7 @@ module.exports = {
     node: true,
     jest: true,
   },
-  rules: {},
+  rules: {
+    'react/require-default-props': 'off',
+  },
 };
